@@ -1,0 +1,8 @@
+E:\Github\Sagonne\obj\Release\net6.0\PubTmp\Out\Sagonne.exe
+E:\Github\Sagonne\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+E:\Github\Sagonne\obj\Release\net6.0\PubTmp\Out\appsettings.json
+E:\Github\Sagonne\obj\Release\net6.0\PubTmp\Out\bower.json
+E:\Github\Sagonne\obj\Release\net6.0\PubTmp\Out\Sagonne.dll
+E:\Github\Sagonne\obj\Release\net6.0\PubTmp\Out\Sagonne.deps.json
+E:\Github\Sagonne\obj\Release\net6.0\PubTmp\Out\Sagonne.runtimeconfig.json
+E:\Github\Sagonne\obj\Release\net6.0\PubTmp\Out\Sagonne.pdb

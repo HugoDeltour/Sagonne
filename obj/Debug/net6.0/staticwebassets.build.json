@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+KPRqkFI90Wjz6+5oOAnO41V87RtzEfmVhNjd0RalwE=",
+  "Hash": "ZF7vib7rfmGKhkDKRUQ9o2Dq0DAQstp9Ennd/HbsAA0=",
   "Source": "Sagonne",
   "BasePath": "_content/Sagonne",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "E:\\Github\\Sagonne\\wwwroot\\images\\istockphoto-691661400-612x612.jpg",
+      "SourceId": "Sagonne",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Github\\Sagonne\\wwwroot\\",
+      "BasePath": "_content/Sagonne",
+      "RelativePath": "images/istockphoto-691661400-612x612.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\istockphoto-691661400-612x612.jpg"
     },
     {
       "Identity": "E:\\Github\\Sagonne\\wwwroot\\js\\site.js",

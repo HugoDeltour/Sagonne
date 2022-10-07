@@ -1,6 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Hosting.Server;
+using Microsoft.AspNetCore.Mvc;
 using Sagonne.Models;
+using System;
 using System.Diagnostics;
+using System.Net;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Sagonne.Controllers
 {
@@ -15,7 +19,32 @@ namespace Sagonne.Controllers
 
         public IActionResult Index()
         {
+
             return View();
+        }
+
+        [HttpPost]
+        public IActionResult FileUpload(IFormFile[] Files)
+        {
+            if(Files != null && Files.Count() > 0)
+            {
+                foreach(var File in Files)
+                {
+                    if (File != null)
+                    {
+                        string FileName = File.FileName;
+                        var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", FileName);
+
+                        var stream = new FileStream(path, FileMode.Create);
+                        File.CopyToAsync(stream);
+
+                        //string url = "/images/" + FileName;
+                    }
+
+                }
+            }
+
+            return RedirectToAction("Index");
         }
 
         public IActionResult Privacy()

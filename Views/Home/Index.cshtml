@@ -13,4 +13,20 @@
     <div class="col-xs-2">
         TEST
     </div>
+    <div class="col-xs-2">
+        TEST
+    </div>
+    <div class="col-xs-2">
+        TEST
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-6">
+        <form method="post" asp-controller="Home" asp-action="FileUpload" enctype="multipart/form-data">
+            <div class="form-group">
+                <input type="file" id="Files" name="Files" multiple />
+                <input type="submit" />
+            </div>
+        </form>
+    </div>
 </div>

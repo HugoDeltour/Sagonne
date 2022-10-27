@@ -44,6 +44,10 @@
               "target": "Package",
               "version": "[1.8.0.1, )"
             },
+            "MetadataExtractor": {
+              "target": "Package",
+              "version": "[2.7.2, )"
+            },
             "MySql.Data": {
               "target": "Package",
               "version": "[8.0.31, )"

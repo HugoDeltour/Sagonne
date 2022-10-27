@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "wxObnvM+/aubMzPleuXpja8buXk6TBEtqF3DrIl6FdivkuEX5TOI6lDQgEHTfDGiEOgqZKuis+JgJU1R1R8Fbg==",
+  "dgSpecHash": "hmJccZa0JBxTtrxtO7IPERHGc0cBoP80FacT6q/DGyDx1dOoOk4dAJl78tGgt51NZva3b0Ls/EwYhfA4a8B2oA==",
   "success": true,
   "projectFilePath": "E:\\Github\\Sagonne\\Sagonne.csproj",
   "expectedPackageFiles": [
@@ -13,6 +13,7 @@
     "C:\\Users\\Hugo\\.nuget\\packages\\k4os.compression.lz4\\1.2.6\\k4os.compression.lz4.1.2.6.nupkg.sha512",
     "C:\\Users\\Hugo\\.nuget\\packages\\k4os.compression.lz4.streams\\1.2.6\\k4os.compression.lz4.streams.1.2.6.nupkg.sha512",
     "C:\\Users\\Hugo\\.nuget\\packages\\k4os.hash.xxhash\\1.0.6\\k4os.hash.xxhash.1.0.6.nupkg.sha512",
+    "C:\\Users\\Hugo\\.nuget\\packages\\metadataextractor\\2.7.2\\metadataextractor.2.7.2.nupkg.sha512",
     "C:\\Users\\Hugo\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Hugo\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Hugo\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
@@ -32,11 +33,12 @@
     "C:\\Users\\Hugo\\.nuget\\packages\\system.security.cryptography.protecteddata\\4.4.0\\system.security.cryptography.protecteddata.4.4.0.nupkg.sha512",
     "C:\\Users\\Hugo\\.nuget\\packages\\system.security.permissions\\4.7.0\\system.security.permissions.4.7.0.nupkg.sha512",
     "C:\\Users\\Hugo\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
-    "C:\\Users\\Hugo\\.nuget\\packages\\system.text.encoding.codepages\\4.4.0\\system.text.encoding.codepages.4.4.0.nupkg.sha512",
+    "C:\\Users\\Hugo\\.nuget\\packages\\system.text.encoding.codepages\\4.5.1\\system.text.encoding.codepages.4.5.1.nupkg.sha512",
     "C:\\Users\\Hugo\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
     "C:\\Users\\Hugo\\.nuget\\packages\\webmarkupmin.aspnet.common\\2.12.0\\webmarkupmin.aspnet.common.2.12.0.nupkg.sha512",
     "C:\\Users\\Hugo\\.nuget\\packages\\webmarkupmin.aspnetcore3\\2.12.0\\webmarkupmin.aspnetcore3.2.12.0.nupkg.sha512",
-    "C:\\Users\\Hugo\\.nuget\\packages\\webmarkupmin.core\\2.12.0\\webmarkupmin.core.2.12.0.nupkg.sha512"
+    "C:\\Users\\Hugo\\.nuget\\packages\\webmarkupmin.core\\2.12.0\\webmarkupmin.core.2.12.0.nupkg.sha512",
+    "C:\\Users\\Hugo\\.nuget\\packages\\xmpcore\\6.1.10.1\\xmpcore.6.1.10.1.nupkg.sha512"
   ],
   "logs": []
 }

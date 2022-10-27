@@ -10,6 +10,11 @@ using System.Drawing;
 using System.Net;
 using static System.Net.Mime.MediaTypeNames;
 using DatabaseFunctions;
+using System.Drawing.Imaging;
+using MetadataExtractor;
+using MetadataExtractor.Formats.FileSystem;
+using MetadataExtractor.Formats.Exif;
+using System.Globalization;
 
 namespace Sagonne.Controllers
 {
@@ -25,18 +30,42 @@ namespace Sagonne.Controllers
         public async Task<ActionResult> Index()
         {
             int height = 0;
-            String[] images = Directory.GetFiles("wwwroot/images/Caroussel/");
+            String[] images = System.IO.Directory.GetFiles("wwwroot/images/Caroussel/");
             foreach(String file in images)
             {
                 FileInfo fileInfo = new FileInfo(file);
                 var sizeInBytes = fileInfo.Length;
 
-                Bitmap img = new Bitmap(file);
+                Bitmap img = new(file);
 
                 if (img.Height<height || height == 0)
                 {
                     height = img.Height;
                 }
+
+                IEnumerable<MetadataExtractor.Directory> directories = ImageMetadataReader.ReadMetadata("wwwroot/images/Caroussel/299860157_585473106587203_3828870485022073346_n.jpg");
+                string datePhoto ="";
+                foreach (var directory in directories)
+                {
+                    foreach (var tag in directory.Tags)
+                    {
+                        if (tag.Name.Contains("Date"))
+                        {
+                           datePhoto = tag.Description;
+                        }
+                    }
+                }
+
+                string pattern = "ddd MMM dd H:mm:ss K yyyy";
+
+                DateTime d;
+                
+                if (DateTime.TryParseExact(datePhoto, pattern, null, DateTimeStyles.None, out d))
+                    Console.WriteLine("Converted '{0}' to {1:d}.",
+                                      datePhoto, d);
+                else
+                    Console.WriteLine("Unable to convert '{0}' to a date and time.",
+                                      datePhoto);
             }
 
             //suppression du "wwwroot/"
@@ -97,7 +126,7 @@ namespace Sagonne.Controllers
                     if (File != null)
                     {
                         string FileName = File.FileName;
-                        var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", FileName);
+                        var path = Path.Combine(System.IO.Directory.GetCurrentDirectory(), "wwwroot/images", FileName);
 
                         var stream = new FileStream(path, FileMode.Create);
                         File.CopyToAsync(stream);
@@ -105,11 +134,6 @@ namespace Sagonne.Controllers
                 }
             }
 
-            return View();
-        }
-
-        public IActionResult Privacy()
-        {
             return View();
         }
 

@@ -54,3 +54,5 @@ E:\Github\Sagonne\bin\Debug\net6.0\AdvancedStringBuilder.dll
 E:\Github\Sagonne\bin\Debug\net6.0\WebMarkupMin.AspNet.Common.dll
 E:\Github\Sagonne\bin\Debug\net6.0\WebMarkupMin.AspNetCore3.dll
 E:\Github\Sagonne\bin\Debug\net6.0\WebMarkupMin.Core.dll
+E:\Github\Sagonne\bin\Debug\net6.0\MetadataExtractor.dll
+E:\Github\Sagonne\bin\Debug\net6.0\XmpCore.dll

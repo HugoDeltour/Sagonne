@@ -1,8 +1,12 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+@model PortofolioModel
 <div class="row">
     <div class="col-xs-6">
-        Portofolio
+        @foreach(KeyValuePair<string,string> Annee in Model.Annees){
+            <img src="@Annee.Value"/>
+            <p>@Annee.Key</p>
+        }
     </div>
 </div>

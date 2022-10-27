@@ -15,6 +15,7 @@ using MetadataExtractor;
 using MetadataExtractor.Formats.FileSystem;
 using MetadataExtractor.Formats.Exif;
 using System.Globalization;
+using Extensions;
 
 namespace Sagonne.Controllers
 {
@@ -38,7 +39,7 @@ namespace Sagonne.Controllers
 
                 Bitmap img = new(file);
 
-                if (img.Height<height || height == 0)
+                if (img.Height < height || height == 0)
                 {
                     height = img.Height;
                 }
@@ -55,8 +56,8 @@ namespace Sagonne.Controllers
 
             IndexModel model = new IndexModel
             {
-                min_height = "" + height + "px",
-                caroussel = images
+                MIN_HEIGHT = "" + height + "px",
+                Caroussel = images
             };
 
             return View(model);
@@ -141,7 +142,27 @@ namespace Sagonne.Controllers
         }
         public async Task<ActionResult> Portofolio()
         {
-            return View();
+            PortofolioModel model = new PortofolioModel()
+            {
+                Annees = new Dictionary<string, string>()
+            };
+
+            string[] dossiers = System.IO.Directory.GetDirectories(Path.Combine(System.IO.Directory.GetCurrentDirectory(), "wwwroot/images"));
+
+            foreach (string dossier in dossiers)
+            {
+                string[] year = dossier.Split("\\");
+                int annee;
+                string Key = year[year.Length - 1];
+                if (Int32.TryParse(Key, out annee))
+                {
+                    List<string> images = System.IO.Directory.GetFiles("wwwroot/images/" + Key).ToList();
+                    images.Shuffle();
+                    model.Annees.Add(Key, images.First().Replace("wwwroot", ""));
+                }
+            }
+
+            return View(model);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

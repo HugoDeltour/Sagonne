@@ -6,7 +6,7 @@
 @model IndexModel
 <style>
 	img {
-		max-height: @Model.min_height;
+		max-height: @Model.MIN_HEIGHT;
 	}
 </style>
 <div class="row">
@@ -15,7 +15,7 @@
 			<div id="demo" class="carousel slide carousel-fade" data-ride="carousel">
 				<!-- Indicateurs -->
 				<ul class="carousel-indicators">
-					@for (int i = 0; i < Model.caroussel.Length; i++)
+					@for (int i = 0; i < Model.Caroussel.Length; i++)
 					{
 						<li data-target="#demo" data-slide-to="@i" class="@(i == 0 ? "active" : "")"></li>
 					}
@@ -23,10 +23,10 @@
 
 				<!-- Carrousel -->
 				<div class="carousel-inner">
-					@for (int i = 0; i < Model.caroussel.Length; i++)
+					@for (int i = 0; i < Model.Caroussel.Length; i++)
 					{
 						<div class="carousel-item @(i == 0 ? "active":"")">
-							<img src="~/@Model.caroussel[i]" alt="Caroussel slide @i" class="d-block">
+							<img src="~/@Model.Caroussel[i]" alt="Caroussel slide @i" class="d-block">
 						</div>
 					}
 				</div>

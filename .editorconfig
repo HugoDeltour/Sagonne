@@ -20,3 +20,18 @@ dotnet_diagnostic.CS8602.severity = none
 
 # CS8601: Existence possible d'une assignation de référence null.
 dotnet_diagnostic.CS8601.severity = none
+
+# CS0618: Le type ou le membre est obsolète
+dotnet_diagnostic.CS0618.severity = none
+
+# CS1998: Cette méthode async n'a pas d'opérateur 'await' et elle s'exécutera de façon synchrone
+dotnet_diagnostic.CS1998.severity = none
+
+# CA1416: Valider la compatibilité de la plateforme
+dotnet_diagnostic.CA1416.severity = none
+
+# SYSLIB0023: Le type ou le membre est obsolète
+dotnet_diagnostic.SYSLIB0023.severity = none
+
+# IDE0090: Utiliser 'new(...)'
+dotnet_diagnostic.IDE0090.severity = none

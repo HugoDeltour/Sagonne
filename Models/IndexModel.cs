@@ -4,8 +4,8 @@ namespace Sagonne.Models
 {
     public class IndexModel
     {
-        public string min_height { get; set; }
-        public string[] caroussel { get; set; }
+        public string MIN_HEIGHT { get; set; }
+        public string[] Caroussel { get; set; }
         public IEnumerable<Evenement> Evenements { get; set; }
     }
 }

@@ -43,29 +43,6 @@ namespace Sagonne.Controllers
                     height = img.Height;
                 }
 
-                IEnumerable<MetadataExtractor.Directory> directories = ImageMetadataReader.ReadMetadata("wwwroot/images/Caroussel/299860157_585473106587203_3828870485022073346_n.jpg");
-                string datePhoto ="";
-                foreach (var directory in directories)
-                {
-                    foreach (var tag in directory.Tags)
-                    {
-                        if (tag.Name.Contains("Date"))
-                        {
-                           datePhoto = tag.Description;
-                        }
-                    }
-                }
-
-                string pattern = "ddd MMM dd H:mm:ss K yyyy";
-
-                DateTime d;
-                
-                if (DateTime.TryParseExact(datePhoto, pattern, null, DateTimeStyles.None, out d))
-                    Console.WriteLine("Converted '{0}' to {1:d}.",
-                                      datePhoto, d);
-                else
-                    Console.WriteLine("Unable to convert '{0}' to a date and time.",
-                                      datePhoto);
             }
 
             //suppression du "wwwroot/"
@@ -125,15 +102,45 @@ namespace Sagonne.Controllers
                 {
                     if (File != null)
                     {
-                        string FileName = File.FileName;
+                        string FileName = File.FileName;                        
                         var path = Path.Combine(System.IO.Directory.GetCurrentDirectory(), "wwwroot/images", FileName);
 
                         var stream = new FileStream(path, FileMode.Create);
                         File.CopyToAsync(stream);
+                        stream.Close();
+
+                        IEnumerable<MetadataExtractor.Directory> directories = ImageMetadataReader.ReadMetadata("wwwroot/images/"+FileName);
+                        foreach (var directory in directories)
+                        {
+                            foreach (var tag in directory.Tags)
+                            {
+                                if (tag.Name.Contains("Date"))
+                                {
+                                    string pattern = "ddd MMM dd H:mm:ss K yyyy";
+                                    DateTime d;
+
+                                    if (DateTime.TryParseExact(tag.Description, pattern, null, DateTimeStyles.None, out d))
+                                    {
+                                        string destFileName = "wwwroot/images/" + d.Year + "/";
+                                        if (!System.IO.Directory.Exists(destFileName))
+                                        {
+                                            System.IO.Directory.CreateDirectory(destFileName);
+                                        }
+                                        System.IO.File.Move(path, destFileName+FileName);
+                                    }
+                                }
+                            }
+                        }
+
+                        
                     }
                 }
             }
 
+            return View();
+        }
+        public async Task<ActionResult> Portofolio()
+        {
             return View();
         }
 

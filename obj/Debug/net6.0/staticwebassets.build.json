@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "t+hyHto+6dpMkHhAzC/xYhvHbBa0OD7nQG9iYCQX0Pc=",
+  "Hash": "Z7RoRxqgN/Lp7thPyetb86vowsOT1LG/BV28iK+5rEs=",
   "Source": "Sagonne",
   "BasePath": "_content/Sagonne",
   "Mode": "Default",
@@ -1037,6 +1037,23 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "E:\\Github\\Sagonne\\wwwroot\\images\\2022\\311232898_428843949323904_9171292965681513461_n.jpg",
+      "SourceId": "Sagonne",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Github\\Sagonne\\wwwroot\\",
+      "BasePath": "_content/Sagonne",
+      "RelativePath": "images/2022/311232898_428843949323904_9171292965681513461_n.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\2022\\311232898_428843949323904_9171292965681513461_n.jpg"
+    },
+    {
       "Identity": "E:\\Github\\Sagonne\\wwwroot\\images\\Caroussel\\299860157_585473106587203_3828870485022073346_n.jpg",
       "SourceId": "Sagonne",
       "SourceType": "Discovered",
@@ -1103,40 +1120,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\Caroussel\\310539085_635769388049679_7824349735468086705_n.jpg"
-    },
-    {
-      "Identity": "E:\\Github\\Sagonne\\wwwroot\\images\\istockphoto-1691661400-612x612.jpg",
-      "SourceId": "Sagonne",
-      "SourceType": "Discovered",
-      "ContentRoot": "E:\\Github\\Sagonne\\wwwroot\\",
-      "BasePath": "_content/Sagonne",
-      "RelativePath": "images/istockphoto-1691661400-612x612.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\istockphoto-1691661400-612x612.jpg"
-    },
-    {
-      "Identity": "E:\\Github\\Sagonne\\wwwroot\\images\\istockphoto-691661400-612x612.jpg",
-      "SourceId": "Sagonne",
-      "SourceType": "Discovered",
-      "ContentRoot": "E:\\Github\\Sagonne\\wwwroot\\",
-      "BasePath": "_content/Sagonne",
-      "RelativePath": "images/istockphoto-691661400-612x612.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\istockphoto-691661400-612x612.jpg"
     },
     {
       "Identity": "E:\\Github\\Sagonne\\wwwroot\\js\\bootstrap-datepicker.js",

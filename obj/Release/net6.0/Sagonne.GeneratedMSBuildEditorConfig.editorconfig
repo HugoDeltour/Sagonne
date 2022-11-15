@@ -23,8 +23,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Github/Sagonne/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[E:/Github/Sagonne/Views/Home/PhotoAnnee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQaG90b0FubmVlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Github/Sagonne/Views/Home/Portofolio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQb3J0b2ZvbGlvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/Github/Sagonne/Views/Shared/Error.cshtml]

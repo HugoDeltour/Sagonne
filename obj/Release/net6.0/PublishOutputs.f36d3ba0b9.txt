@@ -11,6 +11,7 @@ E:\Github\Sagonne\obj\Release\net6.0\PubTmp\Out\Google.Protobuf.dll
 E:\Github\Sagonne\obj\Release\net6.0\PubTmp\Out\K4os.Compression.LZ4.dll
 E:\Github\Sagonne\obj\Release\net6.0\PubTmp\Out\K4os.Compression.LZ4.Streams.dll
 E:\Github\Sagonne\obj\Release\net6.0\PubTmp\Out\K4os.Hash.xxHash.dll
+E:\Github\Sagonne\obj\Release\net6.0\PubTmp\Out\MetadataExtractor.dll
 E:\Github\Sagonne\obj\Release\net6.0\PubTmp\Out\Microsoft.Win32.SystemEvents.dll
 E:\Github\Sagonne\obj\Release\net6.0\PubTmp\Out\MySql.Data.dll
 E:\Github\Sagonne\obj\Release\net6.0\PubTmp\Out\ZstdNet.dll
@@ -24,6 +25,7 @@ E:\Github\Sagonne\obj\Release\net6.0\PubTmp\Out\System.Windows.Extensions.dll
 E:\Github\Sagonne\obj\Release\net6.0\PubTmp\Out\WebMarkupMin.AspNet.Common.dll
 E:\Github\Sagonne\obj\Release\net6.0\PubTmp\Out\WebMarkupMin.AspNetCore3.dll
 E:\Github\Sagonne\obj\Release\net6.0\PubTmp\Out\WebMarkupMin.Core.dll
+E:\Github\Sagonne\obj\Release\net6.0\PubTmp\Out\XmpCore.dll
 E:\Github\Sagonne\obj\Release\net6.0\PubTmp\Out\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
 E:\Github\Sagonne\obj\Release\net6.0\PubTmp\Out\runtimes\win-arm64\native\sni.dll
 E:\Github\Sagonne\obj\Release\net6.0\PubTmp\Out\runtimes\win-x64\native\sni.dll

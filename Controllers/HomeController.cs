@@ -91,12 +91,18 @@ namespace Sagonne.Controllers
 
         public IActionResult FileUpload()
         {
-            return View();
+            FileUploadModel model = new FileUploadModel()
+            {
+                Phrase = ""
+            };
+            return View(model);
         }
 
         [HttpPost]
         public IActionResult FileUpload(IFormFile[] Files)
         {
+            FileUploadModel model = new FileUploadModel();
+
             if(Files != null && Files.Count() > 0)
             {
                 foreach(var File in Files)
@@ -115,9 +121,10 @@ namespace Sagonne.Controllers
                         {
                             foreach (var tag in directory.Tags)
                             {
-                                if (tag.Name.Contains("Date"))
+                                if (tag.Name.Contains("Date/Time"))
                                 {
-                                    string pattern = "ddd MMM dd H:mm:ss K yyyy";
+                                    //string pattern = "ddd MMM dd H:mm:ss K yyyy";
+                                    string pattern = "yyyy:MM:dd H:mm:ss";
                                     DateTime d;
 
                                     if (DateTime.TryParseExact(tag.Description, pattern, null, DateTimeStyles.None, out d))
@@ -127,18 +134,24 @@ namespace Sagonne.Controllers
                                         {
                                             System.IO.Directory.CreateDirectory(destFileName);
                                         }
-                                        System.IO.File.Move(path, destFileName+FileName);
+                                        if(!System.IO.File.Exists(destFileName + FileName))
+                                        {
+                                            System.IO.File.Move(path, destFileName + FileName);
+                                            model.Phrase = "Fichier ajouté";
+                                        }
+                                        else
+                                        {
+                                            model.Phrase = "Fichier déjà existant";
+                                        }
                                     }
                                 }
                             }
-                        }
-
-                        
+                        }                        
                     }
                 }
             }
 
-            return View();
+            return View(model);
         }
         public async Task<ActionResult> Portofolio()
         {
@@ -157,12 +170,20 @@ namespace Sagonne.Controllers
                 if (Int32.TryParse(Key, out annee))
                 {
                     List<string> images = System.IO.Directory.GetFiles("wwwroot/images/" + Key).ToList();
-                    images.Shuffle();
-                    model.Annees.Add(Key, images.First().Replace("wwwroot", ""));
+                    if(images.Count() > 0)
+                    {
+                        images.Shuffle();
+                        model.Annees.Add(Key, images.First().Replace("wwwroot", ""));
+                    }
                 }
             }
 
             return View(model);
+        }
+
+        public async Task<ActionResult> PhotoAnnee()
+        {
+            return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

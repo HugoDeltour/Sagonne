@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ca7PJQ+m/2eYXFcIAO8F2Qt+cwIQfUskBN75qW7l0A0=",
+  "Hash": "KciU4UhaIVERZmsvxJ6e5q5ZlqbSPjNAAalnzXHV4+o=",
   "Source": "Sagonne",
   "BasePath": "_content/Sagonne",
   "Mode": "Default",
@@ -1035,6 +1035,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "E:\\Github\\Sagonne\\wwwroot\\images\\2022\\310849896_820694755915048_6884963963062262503_n.jpg",
+      "SourceId": "Sagonne",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Github\\Sagonne\\wwwroot\\",
+      "BasePath": "_content/Sagonne",
+      "RelativePath": "images/2022/310849896_820694755915048_6884963963062262503_n.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\2022\\310849896_820694755915048_6884963963062262503_n.jpg"
+    },
+    {
+      "Identity": "E:\\Github\\Sagonne\\wwwroot\\images\\2022\\311232898_428843949323904_9171292965681513461_n.jpg",
+      "SourceId": "Sagonne",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Github\\Sagonne\\wwwroot\\",
+      "BasePath": "_content/Sagonne",
+      "RelativePath": "images/2022/311232898_428843949323904_9171292965681513461_n.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\2022\\311232898_428843949323904_9171292965681513461_n.jpg"
     },
     {
       "Identity": "E:\\Github\\Sagonne\\wwwroot\\images\\Caroussel\\299860157_585473106587203_3828870485022073346_n.jpg",

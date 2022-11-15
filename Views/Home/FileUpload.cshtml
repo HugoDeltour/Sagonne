@@ -1,6 +1,7 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+@model FileUploadModel
 <div class="row">
     <div class="col-xs-6">
         <form method="post" asp-controller="Home" asp-action="FileUpload" enctype="multipart/form-data">
@@ -11,3 +12,12 @@
         </form>
     </div>
 </div>
+@if (!string.IsNullOrEmpty(Model.Phrase))
+{
+    <div class="row">
+        <div class="col-xs-6">
+            @Model.Phrase
+        </div>
+    </div>
+
+}

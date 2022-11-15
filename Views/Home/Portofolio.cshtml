@@ -3,10 +3,13 @@
 }
 @model PortofolioModel
 <div class="row">
-    <div class="col-xs-6">
-        @foreach(KeyValuePair<string,string> Annee in Model.Annees){
-            <img src="@Annee.Value"/>
-            <p>@Annee.Key</p>
-        }
-    </div>
+    @foreach(KeyValuePair<string,string> Annee in Model.Annees)
+    {
+        <a href="PhotoAnnee?Annee=@Annee.Key"><br />
+            <img class="imgPortofolio" src="@Annee.Value" />
+            <div class="text-center">
+                @Annee.Key
+            </div>
+        </a>
+    }
 </div>

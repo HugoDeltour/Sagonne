@@ -9,6 +9,7 @@
       "Sagonne/1.0.0": {
         "dependencies": {
           "Bootstrap.Datepicker": "1.8.0.1",
+          "MetadataExtractor": "2.7.2",
           "MySql.Data": "8.0.31",
           "System.Data.SqlClient": "4.8.4",
           "System.Drawing.Common": "6.0.0",
@@ -79,6 +80,18 @@
           }
         }
       },
+      "MetadataExtractor/2.7.2": {
+        "dependencies": {
+          "System.Text.Encoding.CodePages": "4.5.1",
+          "XmpCore": "6.1.10.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/MetadataExtractor.dll": {
+            "assemblyVersion": "2.7.2.0",
+            "fileVersion": "2.7.2.0"
+          }
+        }
+      },
       "Microsoft.NETCore.Platforms/3.1.0": {},
       "Microsoft.Win32.Registry/4.7.0": {
         "dependencies": {
@@ -111,7 +124,7 @@
           "System.Configuration.ConfigurationManager": "4.4.1",
           "System.Runtime.CompilerServices.Unsafe": "5.0.0",
           "System.Security.Permissions": "4.7.0",
-          "System.Text.Encoding.CodePages": "4.4.0"
+          "System.Text.Encoding.CodePages": "4.5.1"
         },
         "runtime": {
           "lib/net6.0/MySql.Data.dll": {
@@ -267,9 +280,10 @@
         }
       },
       "System.Security.Principal.Windows/4.7.0": {},
-      "System.Text.Encoding.CodePages/4.4.0": {
+      "System.Text.Encoding.CodePages/4.5.1": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.1.0"
+          "Microsoft.NETCore.Platforms": "3.1.0",
+          "System.Runtime.CompilerServices.Unsafe": "5.0.0"
         }
       },
       "System.Windows.Extensions/4.7.0": {
@@ -322,6 +336,14 @@
           "lib/netstandard2.1/WebMarkupMin.Core.dll": {
             "assemblyVersion": "2.12.0.0",
             "fileVersion": "2.12.0.0"
+          }
+        }
+      },
+      "XmpCore/6.1.10.1": {
+        "runtime": {
+          "lib/netstandard2.0/XmpCore.dll": {
+            "assemblyVersion": "6.1.10.1",
+            "fileVersion": "6.1.10.1"
           }
         }
       }
@@ -395,6 +417,13 @@
       "sha512": "sha512-jCfNP0inx1sGcP3KSbpiDEH3km2e1sVBjMfKo+V92jr1dL4ZYgA1uhRMl1wAtdGZcbObXIikKqtVlgx3j/CW6g==",
       "path": "k4os.hash.xxhash/1.0.6",
       "hashPath": "k4os.hash.xxhash.1.0.6.nupkg.sha512"
+    },
+    "MetadataExtractor/2.7.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gpeMxavqg+Bi9WqtjYpoXRua+SS8O1YIs7CL+c6dVjmkZzfM9ktFu9+CRsCaL2+5wMsjX5KEVUNx8KsYL9Mr0A==",
+      "path": "metadataextractor/2.7.2",
+      "hashPath": "metadataextractor.2.7.2.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/3.1.0": {
       "type": "package",
@@ -529,12 +558,12 @@
       "path": "system.security.principal.windows/4.7.0",
       "hashPath": "system.security.principal.windows.4.7.0.nupkg.sha512"
     },
-    "System.Text.Encoding.CodePages/4.4.0": {
+    "System.Text.Encoding.CodePages/4.5.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-6JX7ZdaceBiLKLkYt8zJcp4xTJd1uYyXXEkPw6mnlUIjh1gZPIVKPtRXPmY5kLf6DwZmf5YLwR3QUrRonl7l0A==",
-      "path": "system.text.encoding.codepages/4.4.0",
-      "hashPath": "system.text.encoding.codepages.4.4.0.nupkg.sha512"
+      "sha512": "sha512-4J2JQXbftjPMppIHJ7IC+VXQ9XfEagN92vZZNoG12i+zReYlim5dMoXFC1Zzg7tsnKDM7JPo5bYfFK4Jheq44w==",
+      "path": "system.text.encoding.codepages/4.5.1",
+      "hashPath": "system.text.encoding.codepages.4.5.1.nupkg.sha512"
     },
     "System.Windows.Extensions/4.7.0": {
       "type": "package",
@@ -563,6 +592,13 @@
       "sha512": "sha512-NUZGFpRtLwLgUsMer9nTrKGcgtbcCB7KRPiNpZBDwbaWfSVOKDQYygpZ0587hP9zHQ9jzCMpJenO6H2SUhUZXg==",
       "path": "webmarkupmin.core/2.12.0",
       "hashPath": "webmarkupmin.core.2.12.0.nupkg.sha512"
+    },
+    "XmpCore/6.1.10.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/Tp2/e39e7z8hLtS4TXt0FNNZHbf5yNFfHS0/59soXlgOzZlyRZivvzWpvujyaWkTWWgecp/1nHxkuc5vntn7A==",
+      "path": "xmpcore/6.1.10.1",
+      "hashPath": "xmpcore.6.1.10.1.nupkg.sha512"
     }
   }
 }

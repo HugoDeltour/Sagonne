@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Z7RoRxqgN/Lp7thPyetb86vowsOT1LG/BV28iK+5rEs=",
+  "Hash": "d/pYuNX3D3FM5Nq4du/Rg6CJbB6eFa5r0Tpo5aBUnSs=",
   "Source": "Sagonne",
   "BasePath": "_content/Sagonne",
   "Mode": "Default",
@@ -1035,6 +1035,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "E:\\Github\\Sagonne\\wwwroot\\images\\2012\\Mariage.jpg",
+      "SourceId": "Sagonne",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Github\\Sagonne\\wwwroot\\",
+      "BasePath": "_content/Sagonne",
+      "RelativePath": "images/2012/Mariage.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\2012\\Mariage.jpg"
+    },
+    {
+      "Identity": "E:\\Github\\Sagonne\\wwwroot\\images\\2022\\310849896_820694755915048_6884963963062262503_n.jpg",
+      "SourceId": "Sagonne",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Github\\Sagonne\\wwwroot\\",
+      "BasePath": "_content/Sagonne",
+      "RelativePath": "images/2022/310849896_820694755915048_6884963963062262503_n.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\2022\\310849896_820694755915048_6884963963062262503_n.jpg"
     },
     {
       "Identity": "E:\\Github\\Sagonne\\wwwroot\\images\\2022\\311232898_428843949323904_9171292965681513461_n.jpg",

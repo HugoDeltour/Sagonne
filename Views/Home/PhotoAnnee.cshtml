@@ -1,8 +1,13 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+@model PhotoAnneeModel
 <div class="row">
-    <div class="col-xs-6">
-        Photo par ans
-    </div>
+    @foreach (KeyValuePair<string, string> Annee in Model.Photos)
+    {
+        <a href="Photo?Photo=@Annee.Value">
+            <br />
+            <img class="imgPortofolio" src="@Annee.Value" />
+        </a>
+    }
 </div>

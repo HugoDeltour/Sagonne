@@ -16,16 +16,32 @@ using MetadataExtractor.Formats.FileSystem;
 using MetadataExtractor.Formats.Exif;
 using System.Globalization;
 using Extensions;
+using Microsoft.AspNetCore.DataProtection.KeyManagement;
+using System.IO;
+using System.Text;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace Sagonne.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private static string _fileName;
+        private static string _filePath;
+        
 
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
+        }
+
+        public async Task<ActionResult> LogOut()
+        {
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            return RedirectToAction("Login","Account");  
         }
 
         public async Task<ActionResult> Index()
@@ -67,17 +83,31 @@ namespace Sagonne.Controllers
         public async Task<JsonResult> GetEvenement(DateTime dateEvent)
         {
             try
-            {
+            {                
                 IEnumerable<Evenement> evenements = await Database.ExecuteReader<Evenement>(
                     "SELECT * FROM EVENT WHERE DATE_DEBUT<=@DATE AND DATE_FIN>=@DATE",
-                    new List<MySqlParameter> { new MySqlParameter("@DATE",dateEvent)});
+                    new List<MySqlParameter> { new MySqlParameter("@DATE", dateEvent)});
 
-                string Event = "";
+                Dictionary<string, string> Event = new Dictionary<string, string>();
                 if (evenements.Any())
                 {
                     foreach(Evenement ev in evenements)
                     {
-                        Event += ev.NOM ;
+                        Event.Add(ev.NOM,ev.DESCRIPTION??"");
+                    }
+                }
+
+                DateTime date = new DateTime();
+                dateEvent = date.AddYears(1969).AddMonths(dateEvent.Month - 1).AddDays(dateEvent.Day - 1);
+
+                IEnumerable<Anniversaire> Anniversaires = await Database.ExecuteReader<Anniversaire>(
+                   "SELECT * FROM ANNIVERSAIRE WHERE DATE=@DATE",
+                   new List<MySqlParameter> { new MySqlParameter("@DATE", dateEvent) });
+                if (Anniversaires.Any())
+                {
+                    foreach (Anniversaire anniversaire in Anniversaires)
+                    {
+                        Event.Add(anniversaire.NOM, "");
                     }
                 }
 
@@ -89,6 +119,7 @@ namespace Sagonne.Controllers
             }
         }
 
+        [Authorize(Policy = "IsAdmin")]
         public IActionResult FileUpload()
         {
             FileUploadModel model = new FileUploadModel()
@@ -98,8 +129,9 @@ namespace Sagonne.Controllers
             return View(model);
         }
 
+        [Authorize(Policy = "IsAdmin")]
         [HttpPost]
-        public IActionResult FileUpload(IFormFile[] Files)
+        public async Task<IActionResult> FileUploadAsync(IFormFile[] Files)
         {
             FileUploadModel model = new FileUploadModel();
 
@@ -109,14 +141,17 @@ namespace Sagonne.Controllers
                 {
                     if (File != null)
                     {
-                        string FileName = File.FileName;                        
-                        var path = Path.Combine(System.IO.Directory.GetCurrentDirectory(), "wwwroot/images", FileName);
+                        _fileName = File.FileName;
+                        _filePath = "wwwroot/images/" + _fileName;
+                        var path = Path.Combine(System.IO.Directory.GetCurrentDirectory(), "wwwroot/images", _fileName);
 
                         var stream = new FileStream(path, FileMode.Create);
-                        File.CopyToAsync(stream);
+                        await File.CopyToAsync(stream);
                         stream.Close();
 
-                        IEnumerable<MetadataExtractor.Directory> directories = ImageMetadataReader.ReadMetadata("wwwroot/images/"+FileName);
+                        string destFileName = "wwwroot/images/" + DateTime.Now.Year + "/";
+
+                        IEnumerable<MetadataExtractor.Directory> directories = ImageMetadataReader.ReadMetadata("wwwroot/images/"+ _fileName);
                         foreach (var directory in directories)
                         {
                             foreach (var tag in directory.Tags)
@@ -129,30 +164,32 @@ namespace Sagonne.Controllers
 
                                     if (DateTime.TryParseExact(tag.Description, pattern, null, DateTimeStyles.None, out d))
                                     {
-                                        string destFileName = "wwwroot/images/" + d.Year + "/";
-                                        if (!System.IO.Directory.Exists(destFileName))
-                                        {
-                                            System.IO.Directory.CreateDirectory(destFileName);
-                                        }
-                                        if(!System.IO.File.Exists(destFileName + FileName))
-                                        {
-                                            System.IO.File.Move(path, destFileName + FileName);
-                                            model.Phrase = "Fichier ajouté";
-                                        }
-                                        else
-                                        {
-                                            model.Phrase = "Fichier déjà existant";
-                                        }
+                                        destFileName = "wwwroot/images/" + d.Year + "/";
                                     }
                                 }
                             }
-                        }                        
+                        }
+
+                        if (!System.IO.Directory.Exists(destFileName))
+                        {
+                            System.IO.Directory.CreateDirectory(destFileName);
+                        }
+                        if (!System.IO.File.Exists(destFileName + _fileName))
+                        {
+                            System.IO.File.Move(path, destFileName + _fileName);
+                            model.Phrase = $"Image {_fileName} ajouté";
+                        }
+                        else
+                        {
+                            model.Phrase = $"Image {_fileName} déjà existant";
+                        }
                     }
                 }
             }
 
             return View(model);
         }
+
         public async Task<ActionResult> Portofolio()
         {
             PortofolioModel model = new PortofolioModel()
@@ -181,9 +218,24 @@ namespace Sagonne.Controllers
             return View(model);
         }
 
-        public async Task<ActionResult> PhotoAnnee()
+        public async Task<ActionResult> PhotoAnnee(int annee=0)
         {
-            return View();
+            PhotoAnneeModel model = new PhotoAnneeModel()
+            {
+                Annee = annee,
+                Photos = new Dictionary<string, string>()
+            };
+            List<string> images = System.IO.Directory.GetFiles("wwwroot/images/" + annee).ToList();
+            int i = 0;
+            foreach(string image in images)
+            {
+                string key = $"{i}";
+                string value = image.Replace("wwwroot", "");
+                model.Photos.Add(key, value);
+                i++;
+            }
+
+            return View(model);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

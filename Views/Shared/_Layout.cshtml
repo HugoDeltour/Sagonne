@@ -1,4 +1,6 @@
 ﻿@using Microsoft.AspNetCore.Http;
+@using Microsoft.AspNetCore.Authorization;
+@inject IAuthorizationService AuthorizationService
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -16,7 +18,11 @@
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Sagonne</a>
                 <a class="text-dark" asp-area="" asp-controller="Home" asp-action="Portofolio">Portofolio</a>
-                <a class="text-dark" asp-area="" asp-controller="Home" asp-action="FileUpload">Ajout d'image</a>
+                @if((await AuthorizationService.AuthorizeAsync(User,"IsAdmin")).Succeeded){
+                    
+                    <a class="text-dark" asp-area="" asp-controller="Home" asp-action="FileUpload">Ajout d'image</a>
+                }
+                <a class="text-dark" asp-area="" asp-controller="Home" asp-action="LogOut">Déconnexion</a>
             </div>
         </nav>
     </header>

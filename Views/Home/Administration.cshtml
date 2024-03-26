@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model AdministrationModel
+<div class="row">
+    @*Formulaire ajout photo*@
+    <div class="col-xs-6 offset-md-2">
+        <form method="post" asp-controller="Home" asp-action="FileUpload" enctype="multipart/form-data">
+            <div class="form-group">
+                <input type="file" id="Files" name="Files" multiple />
+                <select>
+                    <option value="Année de la photo" selected>Année de la photo</option>
+                    <option value="Trombinoscope">Trombinoscope</option>
+                    <option value="Carrousel">Carrousel</option>
+                </select>
+                <input type="submit" />
+            </div>            
+            @if (!string.IsNullOrEmpty(Model.Phrase))
+            {
+                <div class="row">
+                    <div class="col-xs-6">
+                        @Model.Phrase
+                    </div>
+                </div>
+            }
+        </form>
+    </div>
+    @*Formulaire ajout evenement*@
+    
+    <div class="col-xs-6 offset-md-1">
+        <form method="post" asp-controller="Home" asp-action="FileUpload" enctype="multipart/form-data">
+            <div class="form-group">
+
+                <input type="submit" />
+            </div>
+            @if (!string.IsNullOrEmpty(Model.Phrase))
+            {
+                <div class="row">
+                    <div class="col-xs-6">
+                        @Model.Phrase
+                    </div>
+                </div>
+            }
+        </form>
+    </div>
+</div>

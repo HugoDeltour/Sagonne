@@ -93,6 +93,7 @@ namespace Sagonne.Controllers
                 {
                     foreach(Evenement ev in evenements)
                     {
+                        ev.DESCRIPTION = $"De {ev.HEURE_DEBUT} à {ev.HEURE_FIN} : {ev.DESCRIPTION}";
                         Event.Add(ev.NOM,ev.DESCRIPTION??"");
                     }
                 }
@@ -107,11 +108,17 @@ namespace Sagonne.Controllers
                 {
                     foreach (Anniversaire anniversaire in Anniversaires)
                     {
-                        Event.Add(anniversaire.NOM, "");
+                        Event.Add(anniversaire.NOM_ANNIVERSAIRE, "");
                     }
                 }
 
-                return Json(new { success = true, Event = Event, dateEvent = dateEvent });
+                string eventToHtml="";
+                foreach (KeyValuePair<string, string> kvp in Event)
+                {
+                    eventToHtml += $"<div>{kvp.Key}<br>{(kvp.Value !="" ? $"<small>{kvp.Value}</small>":"")}</div>";
+                }
+
+                return Json(new { success = true, Event = eventToHtml, dateEvent = dateEvent });
             }
             catch
             {
@@ -120,9 +127,9 @@ namespace Sagonne.Controllers
         }
 
         [Authorize(Policy = "IsAdmin")]
-        public IActionResult FileUpload()
+        public IActionResult Administration()
         {
-            FileUploadModel model = new FileUploadModel()
+            AdministrationModel model = new AdministrationModel()
             {
                 Phrase = ""
             };
@@ -133,7 +140,7 @@ namespace Sagonne.Controllers
         [HttpPost]
         public async Task<IActionResult> FileUploadAsync(IFormFile[] Files)
         {
-            FileUploadModel model = new FileUploadModel();
+            AdministrationModel model = new AdministrationModel();
 
             if(Files != null && Files.Count() > 0)
             {

@@ -54,7 +54,6 @@ E:\Github\Sagonne\bin\Debug\net6.0\WebMarkupMin.AspNetCore3.dll
 E:\Github\Sagonne\bin\Debug\net6.0\WebMarkupMin.Core.dll
 E:\Github\Sagonne\bin\Debug\net6.0\MetadataExtractor.dll
 E:\Github\Sagonne\bin\Debug\net6.0\XmpCore.dll
-E:\Github\Sagonne\bin\Debug\net6.0\SixLabors.ImageSharp.dll
 E:\Github\Sagonne\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 E:\Github\Sagonne\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
 E:\Github\Sagonne\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll

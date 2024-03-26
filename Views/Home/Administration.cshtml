@@ -5,21 +5,21 @@
 <div class="row">
     @*Formulaire ajout photo*@
     <div class="col-xs-6 offset-md-2">
-        <form method="post" asp-controller="Home" asp-action="FileUpload" enctype="multipart/form-data">
+        <form method="post" id="Form-Fichier" asp-controller="Home" asp-action="FileUpload" enctype="multipart/form-data">
             <div class="form-group">
                 <input type="file" id="Files" name="Files" multiple />
-                <select>
-                    <option value="Année de la photo" selected>Année de la photo</option>
-                    <option value="Trombinoscope">Trombinoscope</option>
-                    <option value="Carrousel">Carrousel</option>
+                <select name="DossierImport" required>
+                    <option value="ANNEE" selected>Année de la photo</option>
+                    <option value="TROMBI">Trombinoscope</option>
+                    <option value="CARROUSEL">Carrousel</option>
                 </select>
                 <input type="submit" />
             </div>            
-            @if (!string.IsNullOrEmpty(Model.Phrase))
+            @if (!string.IsNullOrEmpty(Model.PhraseFichier))
             {
                 <div class="row">
                     <div class="col-xs-6">
-                        @Model.Phrase
+                        @Model.PhraseFichier
                     </div>
                 </div>
             }
@@ -28,19 +28,30 @@
     @*Formulaire ajout evenement*@
     
     <div class="col-xs-6 offset-md-1">
-        <form method="post" asp-controller="Home" asp-action="FileUpload" enctype="multipart/form-data">
+        <form method="post" id="Form-Event" asp-controller="Home" asp-action="SetEvent" enctype="multipart/form-data">
             <div class="form-group">
+                Nom de l'évenement : <input type="text" name="NomEvent"/>
+                Description de l'évenement : <input type="text" name="DescriptionEvent"/>
+                <input id="datetimepicker" type="text" >
 
                 <input type="submit" />
             </div>
-            @if (!string.IsNullOrEmpty(Model.Phrase))
+            @if (!string.IsNullOrEmpty(Model.PhraseEvent))
             {
                 <div class="row">
                     <div class="col-xs-6">
-                        @Model.Phrase
+                        @Model.PhraseEvent
                     </div>
                 </div>
             }
         </form>
     </div>
 </div>
+
+@section Scripts{
+    
+<script type="text/javascript">
+    
+    $('#datetimepicker').datetimepicker();
+</script>
+}

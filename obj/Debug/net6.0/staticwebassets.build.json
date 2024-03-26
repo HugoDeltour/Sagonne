@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yDP6+PSz8UpPiGFMe+ubfCwMK9QRkBzCnJHUgDXBPTs=",
+  "Hash": "CcgM3wqKbpBAlcBOvyBpMYjmkAj2SkqPCa8KPSP7NgM=",
   "Source": "Sagonne",
   "BasePath": "_content/Sagonne",
   "Mode": "Default",
@@ -1105,12 +1105,12 @@
       "OriginalItemSpec": "wwwroot\\images\\2024\\310564950_1493391761187087_1796085150208979844_n.jpg"
     },
     {
-      "Identity": "E:\\Github\\Sagonne\\wwwroot\\images\\Caroussel\\299860157_585473106587203_3828870485022073346_n.jpg",
+      "Identity": "E:\\Github\\Sagonne\\wwwroot\\images\\Carrousel\\299860157_585473106587203_3828870485022073346_n.jpg",
       "SourceId": "Sagonne",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\Github\\Sagonne\\wwwroot\\",
       "BasePath": "_content/Sagonne",
-      "RelativePath": "images/Caroussel/299860157_585473106587203_3828870485022073346_n.jpg",
+      "RelativePath": "images/Carrousel/299860157_585473106587203_3828870485022073346_n.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1119,15 +1119,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\Caroussel\\299860157_585473106587203_3828870485022073346_n.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\Carrousel\\299860157_585473106587203_3828870485022073346_n.jpg"
     },
     {
-      "Identity": "E:\\Github\\Sagonne\\wwwroot\\images\\Caroussel\\310228725_644131204019358_2352137876672379081_n.jpg",
+      "Identity": "E:\\Github\\Sagonne\\wwwroot\\images\\Carrousel\\310228725_644131204019358_2352137876672379081_n.jpg",
       "SourceId": "Sagonne",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\Github\\Sagonne\\wwwroot\\",
       "BasePath": "_content/Sagonne",
-      "RelativePath": "images/Caroussel/310228725_644131204019358_2352137876672379081_n.jpg",
+      "RelativePath": "images/Carrousel/310228725_644131204019358_2352137876672379081_n.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1136,15 +1136,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\Caroussel\\310228725_644131204019358_2352137876672379081_n.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\Carrousel\\310228725_644131204019358_2352137876672379081_n.jpg"
     },
     {
-      "Identity": "E:\\Github\\Sagonne\\wwwroot\\images\\Caroussel\\310534627_438291338448352_2228590460272512605_n.jpg",
+      "Identity": "E:\\Github\\Sagonne\\wwwroot\\images\\Carrousel\\310534627_438291338448352_2228590460272512605_n.jpg",
       "SourceId": "Sagonne",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\Github\\Sagonne\\wwwroot\\",
       "BasePath": "_content/Sagonne",
-      "RelativePath": "images/Caroussel/310534627_438291338448352_2228590460272512605_n.jpg",
+      "RelativePath": "images/Carrousel/310534627_438291338448352_2228590460272512605_n.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1153,15 +1153,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\Caroussel\\310534627_438291338448352_2228590460272512605_n.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\Carrousel\\310534627_438291338448352_2228590460272512605_n.jpg"
     },
     {
-      "Identity": "E:\\Github\\Sagonne\\wwwroot\\images\\Caroussel\\310539085_635769388049679_7824349735468086705_n.jpg",
+      "Identity": "E:\\Github\\Sagonne\\wwwroot\\images\\Carrousel\\310539085_635769388049679_7824349735468086705_n.jpg",
       "SourceId": "Sagonne",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\Github\\Sagonne\\wwwroot\\",
       "BasePath": "_content/Sagonne",
-      "RelativePath": "images/Caroussel/310539085_635769388049679_7824349735468086705_n.jpg",
+      "RelativePath": "images/Carrousel/310539085_635769388049679_7824349735468086705_n.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1170,7 +1170,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\Caroussel\\310539085_635769388049679_7824349735468086705_n.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\Carrousel\\310539085_635769388049679_7824349735468086705_n.jpg"
     },
     {
       "Identity": "E:\\Github\\Sagonne\\wwwroot\\js\\bootstrap-datepicker.js",

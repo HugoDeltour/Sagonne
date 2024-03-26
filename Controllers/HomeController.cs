@@ -22,6 +22,7 @@ using System.Text;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Identity;
 
 namespace Sagonne.Controllers
 {
@@ -47,7 +48,7 @@ namespace Sagonne.Controllers
         public async Task<ActionResult> Index()
         {
             int height = 0;
-            String[] images = System.IO.Directory.GetFiles("wwwroot/images/Caroussel/");
+            String[] images = System.IO.Directory.GetFiles("wwwroot/images/Carrousel/");
             foreach(String file in images)
             {
                 FileInfo fileInfo = new FileInfo(file);
@@ -131,14 +132,15 @@ namespace Sagonne.Controllers
         {
             AdministrationModel model = new AdministrationModel()
             {
-                Phrase = ""
+                PhraseFichier = "",
+                PhraseEvent = ""
             };
             return View(model);
         }
 
         [Authorize(Policy = "IsAdmin")]
         [HttpPost]
-        public async Task<IActionResult> FileUploadAsync(IFormFile[] Files)
+        public async Task<IActionResult> FileUploadAsync(IFormFile[] Files, string DossierImport="", string NomPhotoTrombi="")
         {
             AdministrationModel model = new AdministrationModel();
 
@@ -158,23 +160,33 @@ namespace Sagonne.Controllers
 
                         string destFileName = "wwwroot/images/" + DateTime.Now.Year + "/";
 
-                        IEnumerable<MetadataExtractor.Directory> directories = ImageMetadataReader.ReadMetadata("wwwroot/images/"+ _fileName);
-                        foreach (var directory in directories)
+                        if (DossierImport == "ANNEE")
                         {
-                            foreach (var tag in directory.Tags)
+                            IEnumerable<MetadataExtractor.Directory> directories = ImageMetadataReader.ReadMetadata("wwwroot/images/" + _fileName);
+                            foreach (var directory in directories)
                             {
-                                if (tag.Name.Contains("Date/Time"))
+                                foreach (var tag in directory.Tags)
                                 {
-                                    //string pattern = "ddd MMM dd H:mm:ss K yyyy";
-                                    string pattern = "yyyy:MM:dd H:mm:ss";
-                                    DateTime d;
-
-                                    if (DateTime.TryParseExact(tag.Description, pattern, null, DateTimeStyles.None, out d))
+                                    if (tag.Name.Contains("Date/Time"))
                                     {
-                                        destFileName = "wwwroot/images/" + d.Year + "/";
+                                        //string pattern = "ddd MMM dd H:mm:ss K yyyy";
+                                        string pattern = "yyyy:MM:dd H:mm:ss";
+                                        DateTime d;
+
+                                        if (DateTime.TryParseExact(tag.Description, pattern, null, DateTimeStyles.None, out d))
+                                        {
+                                            destFileName = "wwwroot/images/" + d.Year + "/";
+                                        }
                                     }
                                 }
                             }
+                        }
+                        else if(DossierImport == "TROMBINOSCOPE"){
+                            destFileName = "wwwroot/images/Trombinoscope/" + NomPhotoTrombi.ToUpper() + "/";
+                        }
+                        else if(DossierImport == "CARROUSEL")
+                        {
+                            destFileName = "wwwroot/images/Carrousel/";
                         }
 
                         if (!System.IO.Directory.Exists(destFileName))
@@ -184,15 +196,24 @@ namespace Sagonne.Controllers
                         if (!System.IO.File.Exists(destFileName + _fileName))
                         {
                             System.IO.File.Move(path, destFileName + _fileName);
-                            model.Phrase = $"Image {_fileName} ajouté";
+                            model.PhraseFichier = $"Image {_fileName} ajouté";
                         }
                         else
                         {
-                            model.Phrase = $"Image {_fileName} déjà existant";
+                            model.PhraseFichier = $"Image {_fileName} déjà existant";
                         }
                     }
                 }
             }
+
+            return View(model);
+        }
+        
+        [Authorize(Policy = "IsAdmin")]
+        [HttpPost]
+        public async Task<IActionResult> SetEventAsync(string NomEvent = "", DateTime DateEvent = new DateTime(), string DescriptionEvent = "", string EstAnniversaire = "")
+        {
+            AdministrationModel model = new AdministrationModel();
 
             return View(model);
         }

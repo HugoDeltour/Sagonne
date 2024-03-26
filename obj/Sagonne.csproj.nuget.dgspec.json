@@ -44,6 +44,14 @@
               "target": "Package",
               "version": "[1.8.0.1, )"
             },
+            "Bootstrap.v3.Datetimepicker": {
+              "target": "Package",
+              "version": "[4.17.49, )"
+            },
+            "Bootstrap.v3.Datetimepicker.CSS": {
+              "target": "Package",
+              "version": "[4.17.49, )"
+            },
             "MetadataExtractor": {
               "target": "Package",
               "version": "[2.7.2, )"
@@ -55,6 +63,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.16, )"
+            },
+            "Moment.js": {
+              "target": "Package",
+              "version": "[2.30.1, )"
             },
             "MySql.Data": {
               "target": "Package",
@@ -79,6 +91,10 @@
             "jQuery": {
               "target": "Package",
               "version": "[3.6.0, )"
+            },
+            "jQuery-datetimepicker": {
+              "target": "Package",
+              "version": "[2.4.5, )"
             },
             "jQuery.Validation": {
               "target": "Package",

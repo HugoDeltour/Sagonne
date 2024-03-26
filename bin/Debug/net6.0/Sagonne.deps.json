@@ -9,15 +9,19 @@
       "Sagonne/1.0.0": {
         "dependencies": {
           "Bootstrap.Datepicker": "1.8.0.1",
+          "Bootstrap.v3.Datetimepicker": "4.17.49",
+          "Bootstrap.v3.Datetimepicker.CSS": "4.17.49",
           "MetadataExtractor": "2.7.2",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.28",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.16",
+          "Moment.js": "2.30.1",
           "MySql.Data": "8.0.31",
           "System.Data.SqlClient": "4.8.4",
           "System.Drawing.Common": "6.0.0",
           "WebMarkupMin.AspNetCore3": "2.12.0",
           "bootstrap": "5.2.1",
           "jQuery": "3.6.0",
+          "jQuery-datetimepicker": "2.4.5",
           "jQuery.Validation": "1.19.5"
         },
         "runtime": {
@@ -34,6 +38,23 @@
       },
       "bootstrap/5.2.1": {},
       "Bootstrap.Datepicker/1.8.0.1": {},
+      "bootstrap.less/3.4.1": {
+        "dependencies": {
+          "jQuery": "3.6.0"
+        }
+      },
+      "Bootstrap.v3.Datetimepicker/4.17.49": {
+        "dependencies": {
+          "Moment.js": "2.30.1",
+          "bootstrap.less": "3.4.1"
+        }
+      },
+      "Bootstrap.v3.Datetimepicker.CSS/4.17.49": {
+        "dependencies": {
+          "Moment.js": "2.30.1",
+          "bootstrap": "5.2.1"
+        }
+      },
       "Google.Protobuf/3.19.4": {
         "runtime": {
           "lib/net5.0/Google.Protobuf.dll": {
@@ -583,6 +604,7 @@
         }
       },
       "jQuery/3.6.0": {},
+      "jQuery-datetimepicker/2.4.5": {},
       "jQuery.Validation/1.19.5": {
         "dependencies": {
           "jQuery": "3.6.0"
@@ -1377,6 +1399,7 @@
           }
         }
       },
+      "Moment.js/2.30.1": {},
       "MySql.Data/8.0.31": {
         "dependencies": {
           "Google.Protobuf": "3.19.4",
@@ -2521,6 +2544,27 @@
       "path": "bootstrap.datepicker/1.8.0.1",
       "hashPath": "bootstrap.datepicker.1.8.0.1.nupkg.sha512"
     },
+    "bootstrap.less/3.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-G/laxBbHVHq4G7LCbfRLISrJf8wjaMsx7qpEDzAorUr+jbl66xP5Pd7IPmqAIi5u8six7/ETv9M4nU7amvbN7g==",
+      "path": "bootstrap.less/3.4.1",
+      "hashPath": "bootstrap.less.3.4.1.nupkg.sha512"
+    },
+    "Bootstrap.v3.Datetimepicker/4.17.49": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dBA3TmQCXJ7xZuxQo0IekWJog0dpuS5fgCo8Mjho4To06+pFzEOFn/qPxZ8IlxvVuwG3c3rBIXJ7dRgflsEtqg==",
+      "path": "bootstrap.v3.datetimepicker/4.17.49",
+      "hashPath": "bootstrap.v3.datetimepicker.4.17.49.nupkg.sha512"
+    },
+    "Bootstrap.v3.Datetimepicker.CSS/4.17.49": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-L9cJ+BibhmOw/O40CnuOGlWpgculIszHMR6Kov1GNV8IYijI04LRWl2moSW4ByzN6+toqj3LI+3FF8ff+0YXeQ==",
+      "path": "bootstrap.v3.datetimepicker.css/4.17.49",
+      "hashPath": "bootstrap.v3.datetimepicker.css.4.17.49.nupkg.sha512"
+    },
     "Google.Protobuf/3.19.4": {
       "type": "package",
       "serviceable": true,
@@ -2885,6 +2929,13 @@
       "path": "jquery/3.6.0",
       "hashPath": "jquery.3.6.0.nupkg.sha512"
     },
+    "jQuery-datetimepicker/2.4.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+ZwEXXASCpGHu6u1xPYyfXi0mSun/DIYKfM82JiFv3/9G0ZbW4LmxOuCpmuA8Cp0iWaIOHXDNFQBJmhvxDqi8Q==",
+      "path": "jquery-datetimepicker/2.4.5",
+      "hashPath": "jquery-datetimepicker.2.4.5.nupkg.sha512"
+    },
     "jQuery.Validation/1.19.5": {
       "type": "package",
       "serviceable": true,
@@ -3220,6 +3271,13 @@
       "sha512": "sha512-hqTM5628jSsQiv+HGpiq3WKBl2c8v1KZfby2J6Pr7pEPlK9waPdgEO6b8A/+/xn/yZ9ulv8HuqK71ONy2tg67A==",
       "path": "microsoft.win32.systemevents/6.0.0",
       "hashPath": "microsoft.win32.systemevents.6.0.0.nupkg.sha512"
+    },
+    "Moment.js/2.30.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LIrDTazK51DhrqkMOy97PyS1jWsUHAhaIUYgB4aQTLLUxizMjk0QRltNb535Qgs5IzN/uv1SbFr/qv3PFnkTOA==",
+      "path": "moment.js/2.30.1",
+      "hashPath": "moment.js.2.30.1.nupkg.sha512"
     },
     "MySql.Data/8.0.31": {
       "type": "package",

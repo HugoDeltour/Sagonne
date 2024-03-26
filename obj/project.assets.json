@@ -15,253 +15,8 @@
           }
         }
       },
-      "bootstrap/5.2.1": {
-        "type": "package",
-        "contentFiles": {
-          "contentFiles/any/any/wwwroot/css/bootstrap-grid.css": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-grid.css.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-grid.min.css": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-grid.min.css.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-grid.rtl.css": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-grid.rtl.css.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-grid.rtl.min.css": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-grid.rtl.min.css.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-reboot.css": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-reboot.css.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-reboot.min.css": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-reboot.min.css.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-reboot.rtl.css": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-reboot.rtl.css.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-reboot.rtl.min.css": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-reboot.rtl.min.css.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-utilities.css": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-utilities.css.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-utilities.min.css": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-utilities.min.css.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-utilities.rtl.css": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-utilities.rtl.css.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-utilities.rtl.min.css": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-utilities.rtl.min.css.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap.css": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap.css.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap.min.css": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap.min.css.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap.rtl.css": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap.rtl.css.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap.rtl.min.css": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap.rtl.min.css.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/js/bootstrap.bundle.js": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/js/bootstrap.bundle.js.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/js/bootstrap.bundle.min.js": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/js/bootstrap.bundle.min.js.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/js/bootstrap.esm.js": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/js/bootstrap.esm.js.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/js/bootstrap.esm.min.js": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/js/bootstrap.esm.min.js.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/js/bootstrap.js": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/js/bootstrap.js.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/js/bootstrap.min.js": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/js/bootstrap.min.js.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          }
-        }
-      },
       "Bootstrap.Datepicker/1.8.0.1": {
         "type": "package"
-      },
-      "bootstrap.less/3.4.1": {
-        "type": "package",
-        "dependencies": {
-          "jQuery": "[1.9.1, 4.0.0)"
-        }
-      },
-      "Bootstrap.v3.Datetimepicker/4.17.49": {
-        "type": "package",
-        "dependencies": {
-          "Moment.js": "2.9.0",
-          "bootstrap.Less": "3.4.1"
-        }
-      },
-      "Bootstrap.v3.Datetimepicker.CSS/4.17.49": {
-        "type": "package",
-        "dependencies": {
-          "Moment.js": "2.9.0",
-          "bootstrap": "3.4.1"
-        }
       },
       "Google.Protobuf/3.19.4": {
         "type": "package",
@@ -871,9 +626,6 @@
         }
       },
       "jQuery/3.6.0": {
-        "type": "package"
-      },
-      "jQuery-datetimepicker/2.4.5": {
         "type": "package"
       },
       "jQuery.Validation/1.19.5": {
@@ -1943,9 +1695,6 @@
             "rid": "win"
           }
         }
-      },
-      "Moment.js/2.30.1": {
-        "type": "package"
       },
       "MySql.Data/8.0.31": {
         "type": "package",
@@ -3976,106 +3725,6 @@
         "lib/netstandard2.0/AdvancedStringBuilder.xml"
       ]
     },
-    "bootstrap/5.2.1": {
-      "sha512": "hZdgEyJ4xwoNYWOJiS0HPYhe3f2Ja+Sm0s9PfWhNiKDVUys/SqqJOSdz0FPYS3E+AKmMhkk5jTcUJ/q0jWpNuw==",
-      "type": "package",
-      "path": "bootstrap/5.2.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "bootstrap.5.2.1.nupkg.sha512",
-        "bootstrap.nuspec",
-        "bootstrap.png",
-        "content/Content/bootstrap-grid.css",
-        "content/Content/bootstrap-grid.css.map",
-        "content/Content/bootstrap-grid.min.css",
-        "content/Content/bootstrap-grid.min.css.map",
-        "content/Content/bootstrap-grid.rtl.css",
-        "content/Content/bootstrap-grid.rtl.css.map",
-        "content/Content/bootstrap-grid.rtl.min.css",
-        "content/Content/bootstrap-grid.rtl.min.css.map",
-        "content/Content/bootstrap-reboot.css",
-        "content/Content/bootstrap-reboot.css.map",
-        "content/Content/bootstrap-reboot.min.css",
-        "content/Content/bootstrap-reboot.min.css.map",
-        "content/Content/bootstrap-reboot.rtl.css",
-        "content/Content/bootstrap-reboot.rtl.css.map",
-        "content/Content/bootstrap-reboot.rtl.min.css",
-        "content/Content/bootstrap-reboot.rtl.min.css.map",
-        "content/Content/bootstrap-utilities.css",
-        "content/Content/bootstrap-utilities.css.map",
-        "content/Content/bootstrap-utilities.min.css",
-        "content/Content/bootstrap-utilities.min.css.map",
-        "content/Content/bootstrap-utilities.rtl.css",
-        "content/Content/bootstrap-utilities.rtl.css.map",
-        "content/Content/bootstrap-utilities.rtl.min.css",
-        "content/Content/bootstrap-utilities.rtl.min.css.map",
-        "content/Content/bootstrap.css",
-        "content/Content/bootstrap.css.map",
-        "content/Content/bootstrap.min.css",
-        "content/Content/bootstrap.min.css.map",
-        "content/Content/bootstrap.rtl.css",
-        "content/Content/bootstrap.rtl.css.map",
-        "content/Content/bootstrap.rtl.min.css",
-        "content/Content/bootstrap.rtl.min.css.map",
-        "content/Scripts/bootstrap.bundle.js",
-        "content/Scripts/bootstrap.bundle.js.map",
-        "content/Scripts/bootstrap.bundle.min.js",
-        "content/Scripts/bootstrap.bundle.min.js.map",
-        "content/Scripts/bootstrap.esm.js",
-        "content/Scripts/bootstrap.esm.js.map",
-        "content/Scripts/bootstrap.esm.min.js",
-        "content/Scripts/bootstrap.esm.min.js.map",
-        "content/Scripts/bootstrap.js",
-        "content/Scripts/bootstrap.js.map",
-        "content/Scripts/bootstrap.min.js",
-        "content/Scripts/bootstrap.min.js.map",
-        "contentFiles/any/any/wwwroot/css/bootstrap-grid.css",
-        "contentFiles/any/any/wwwroot/css/bootstrap-grid.css.map",
-        "contentFiles/any/any/wwwroot/css/bootstrap-grid.min.css",
-        "contentFiles/any/any/wwwroot/css/bootstrap-grid.min.css.map",
-        "contentFiles/any/any/wwwroot/css/bootstrap-grid.rtl.css",
-        "contentFiles/any/any/wwwroot/css/bootstrap-grid.rtl.css.map",
-        "contentFiles/any/any/wwwroot/css/bootstrap-grid.rtl.min.css",
-        "contentFiles/any/any/wwwroot/css/bootstrap-grid.rtl.min.css.map",
-        "contentFiles/any/any/wwwroot/css/bootstrap-reboot.css",
-        "contentFiles/any/any/wwwroot/css/bootstrap-reboot.css.map",
-        "contentFiles/any/any/wwwroot/css/bootstrap-reboot.min.css",
-        "contentFiles/any/any/wwwroot/css/bootstrap-reboot.min.css.map",
-        "contentFiles/any/any/wwwroot/css/bootstrap-reboot.rtl.css",
-        "contentFiles/any/any/wwwroot/css/bootstrap-reboot.rtl.css.map",
-        "contentFiles/any/any/wwwroot/css/bootstrap-reboot.rtl.min.css",
-        "contentFiles/any/any/wwwroot/css/bootstrap-reboot.rtl.min.css.map",
-        "contentFiles/any/any/wwwroot/css/bootstrap-utilities.css",
-        "contentFiles/any/any/wwwroot/css/bootstrap-utilities.css.map",
-        "contentFiles/any/any/wwwroot/css/bootstrap-utilities.min.css",
-        "contentFiles/any/any/wwwroot/css/bootstrap-utilities.min.css.map",
-        "contentFiles/any/any/wwwroot/css/bootstrap-utilities.rtl.css",
-        "contentFiles/any/any/wwwroot/css/bootstrap-utilities.rtl.css.map",
-        "contentFiles/any/any/wwwroot/css/bootstrap-utilities.rtl.min.css",
-        "contentFiles/any/any/wwwroot/css/bootstrap-utilities.rtl.min.css.map",
-        "contentFiles/any/any/wwwroot/css/bootstrap.css",
-        "contentFiles/any/any/wwwroot/css/bootstrap.css.map",
-        "contentFiles/any/any/wwwroot/css/bootstrap.min.css",
-        "contentFiles/any/any/wwwroot/css/bootstrap.min.css.map",
-        "contentFiles/any/any/wwwroot/css/bootstrap.rtl.css",
-        "contentFiles/any/any/wwwroot/css/bootstrap.rtl.css.map",
-        "contentFiles/any/any/wwwroot/css/bootstrap.rtl.min.css",
-        "contentFiles/any/any/wwwroot/css/bootstrap.rtl.min.css.map",
-        "contentFiles/any/any/wwwroot/js/bootstrap.bundle.js",
-        "contentFiles/any/any/wwwroot/js/bootstrap.bundle.js.map",
-        "contentFiles/any/any/wwwroot/js/bootstrap.bundle.min.js",
-        "contentFiles/any/any/wwwroot/js/bootstrap.bundle.min.js.map",
-        "contentFiles/any/any/wwwroot/js/bootstrap.esm.js",
-        "contentFiles/any/any/wwwroot/js/bootstrap.esm.js.map",
-        "contentFiles/any/any/wwwroot/js/bootstrap.esm.min.js",
-        "contentFiles/any/any/wwwroot/js/bootstrap.esm.min.js.map",
-        "contentFiles/any/any/wwwroot/js/bootstrap.js",
-        "contentFiles/any/any/wwwroot/js/bootstrap.js.map",
-        "contentFiles/any/any/wwwroot/js/bootstrap.min.js",
-        "contentFiles/any/any/wwwroot/js/bootstrap.min.js.map"
-      ]
-    },
     "Bootstrap.Datepicker/1.8.0.1": {
       "sha512": "/pKY2/KjIGQHmK2reK2iowG0Weu6w42VRjBT8vS5AMcsdKMMxQ4NBrvOxWHUpzf0idY+YaKGnjXyWb+Ba+/M3g==",
       "type": "package",
@@ -4181,204 +3830,6 @@
         "content/Scripts/locales/bootstrap-datepicker.vi.min.js",
         "content/Scripts/locales/bootstrap-datepicker.zh-CN.min.js",
         "content/Scripts/locales/bootstrap-datepicker.zh-TW.min.js"
-      ]
-    },
-    "bootstrap.less/3.4.1": {
-      "sha512": "G/laxBbHVHq4G7LCbfRLISrJf8wjaMsx7qpEDzAorUr+jbl66xP5Pd7IPmqAIi5u8six7/ETv9M4nU7amvbN7g==",
-      "type": "package",
-      "path": "bootstrap.less/3.4.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.txt",
-        "bootstrap.less.3.4.1.nupkg.sha512",
-        "bootstrap.less.nuspec",
-        "content/Content/bootstrap/alerts.less",
-        "content/Content/bootstrap/badges.less",
-        "content/Content/bootstrap/bootstrap.less",
-        "content/Content/bootstrap/breadcrumbs.less",
-        "content/Content/bootstrap/button-groups.less",
-        "content/Content/bootstrap/buttons.less",
-        "content/Content/bootstrap/carousel.less",
-        "content/Content/bootstrap/close.less",
-        "content/Content/bootstrap/code.less",
-        "content/Content/bootstrap/component-animations.less",
-        "content/Content/bootstrap/dropdowns.less",
-        "content/Content/bootstrap/forms.less",
-        "content/Content/bootstrap/glyphicons.less",
-        "content/Content/bootstrap/grid.less",
-        "content/Content/bootstrap/input-groups.less",
-        "content/Content/bootstrap/jumbotron.less",
-        "content/Content/bootstrap/labels.less",
-        "content/Content/bootstrap/list-group.less",
-        "content/Content/bootstrap/media.less",
-        "content/Content/bootstrap/mixins.less",
-        "content/Content/bootstrap/mixins/alerts.less",
-        "content/Content/bootstrap/mixins/background-variant.less",
-        "content/Content/bootstrap/mixins/border-radius.less",
-        "content/Content/bootstrap/mixins/buttons.less",
-        "content/Content/bootstrap/mixins/center-block.less",
-        "content/Content/bootstrap/mixins/clearfix.less",
-        "content/Content/bootstrap/mixins/forms.less",
-        "content/Content/bootstrap/mixins/gradients.less",
-        "content/Content/bootstrap/mixins/grid-framework.less",
-        "content/Content/bootstrap/mixins/grid.less",
-        "content/Content/bootstrap/mixins/hide-text.less",
-        "content/Content/bootstrap/mixins/image.less",
-        "content/Content/bootstrap/mixins/labels.less",
-        "content/Content/bootstrap/mixins/list-group.less",
-        "content/Content/bootstrap/mixins/nav-divider.less",
-        "content/Content/bootstrap/mixins/nav-vertical-align.less",
-        "content/Content/bootstrap/mixins/opacity.less",
-        "content/Content/bootstrap/mixins/pagination.less",
-        "content/Content/bootstrap/mixins/panels.less",
-        "content/Content/bootstrap/mixins/progress-bar.less",
-        "content/Content/bootstrap/mixins/reset-filter.less",
-        "content/Content/bootstrap/mixins/reset-text.less",
-        "content/Content/bootstrap/mixins/resize.less",
-        "content/Content/bootstrap/mixins/responsive-visibility.less",
-        "content/Content/bootstrap/mixins/size.less",
-        "content/Content/bootstrap/mixins/tab-focus.less",
-        "content/Content/bootstrap/mixins/table-row.less",
-        "content/Content/bootstrap/mixins/text-emphasis.less",
-        "content/Content/bootstrap/mixins/text-overflow.less",
-        "content/Content/bootstrap/mixins/vendor-prefixes.less",
-        "content/Content/bootstrap/modals.less",
-        "content/Content/bootstrap/navbar.less",
-        "content/Content/bootstrap/navs.less",
-        "content/Content/bootstrap/normalize.less",
-        "content/Content/bootstrap/pager.less",
-        "content/Content/bootstrap/pagination.less",
-        "content/Content/bootstrap/panels.less",
-        "content/Content/bootstrap/popovers.less",
-        "content/Content/bootstrap/print.less",
-        "content/Content/bootstrap/progress-bars.less",
-        "content/Content/bootstrap/responsive-embed.less",
-        "content/Content/bootstrap/responsive-utilities.less",
-        "content/Content/bootstrap/scaffolding.less",
-        "content/Content/bootstrap/tables.less",
-        "content/Content/bootstrap/theme.less",
-        "content/Content/bootstrap/thumbnails.less",
-        "content/Content/bootstrap/tooltip.less",
-        "content/Content/bootstrap/type.less",
-        "content/Content/bootstrap/utilities.less",
-        "content/Content/bootstrap/variables.less",
-        "content/Content/bootstrap/wells.less",
-        "content/Content/fonts/glyphicons-halflings-regular.eot",
-        "content/Content/fonts/glyphicons-halflings-regular.svg",
-        "content/Content/fonts/glyphicons-halflings-regular.ttf",
-        "content/Content/fonts/glyphicons-halflings-regular.woff",
-        "content/Content/fonts/glyphicons-halflings-regular.woff2",
-        "content/Scripts/bootstrap.js",
-        "content/Scripts/bootstrap.min.js",
-        "contentFiles/Content/bootstrap/alerts.less",
-        "contentFiles/Content/bootstrap/badges.less",
-        "contentFiles/Content/bootstrap/bootstrap.less",
-        "contentFiles/Content/bootstrap/breadcrumbs.less",
-        "contentFiles/Content/bootstrap/button-groups.less",
-        "contentFiles/Content/bootstrap/buttons.less",
-        "contentFiles/Content/bootstrap/carousel.less",
-        "contentFiles/Content/bootstrap/close.less",
-        "contentFiles/Content/bootstrap/code.less",
-        "contentFiles/Content/bootstrap/component-animations.less",
-        "contentFiles/Content/bootstrap/dropdowns.less",
-        "contentFiles/Content/bootstrap/forms.less",
-        "contentFiles/Content/bootstrap/glyphicons.less",
-        "contentFiles/Content/bootstrap/grid.less",
-        "contentFiles/Content/bootstrap/input-groups.less",
-        "contentFiles/Content/bootstrap/jumbotron.less",
-        "contentFiles/Content/bootstrap/labels.less",
-        "contentFiles/Content/bootstrap/list-group.less",
-        "contentFiles/Content/bootstrap/media.less",
-        "contentFiles/Content/bootstrap/mixins.less",
-        "contentFiles/Content/bootstrap/mixins/alerts.less",
-        "contentFiles/Content/bootstrap/mixins/background-variant.less",
-        "contentFiles/Content/bootstrap/mixins/border-radius.less",
-        "contentFiles/Content/bootstrap/mixins/buttons.less",
-        "contentFiles/Content/bootstrap/mixins/center-block.less",
-        "contentFiles/Content/bootstrap/mixins/clearfix.less",
-        "contentFiles/Content/bootstrap/mixins/forms.less",
-        "contentFiles/Content/bootstrap/mixins/gradients.less",
-        "contentFiles/Content/bootstrap/mixins/grid-framework.less",
-        "contentFiles/Content/bootstrap/mixins/grid.less",
-        "contentFiles/Content/bootstrap/mixins/hide-text.less",
-        "contentFiles/Content/bootstrap/mixins/image.less",
-        "contentFiles/Content/bootstrap/mixins/labels.less",
-        "contentFiles/Content/bootstrap/mixins/list-group.less",
-        "contentFiles/Content/bootstrap/mixins/nav-divider.less",
-        "contentFiles/Content/bootstrap/mixins/nav-vertical-align.less",
-        "contentFiles/Content/bootstrap/mixins/opacity.less",
-        "contentFiles/Content/bootstrap/mixins/pagination.less",
-        "contentFiles/Content/bootstrap/mixins/panels.less",
-        "contentFiles/Content/bootstrap/mixins/progress-bar.less",
-        "contentFiles/Content/bootstrap/mixins/reset-filter.less",
-        "contentFiles/Content/bootstrap/mixins/reset-text.less",
-        "contentFiles/Content/bootstrap/mixins/resize.less",
-        "contentFiles/Content/bootstrap/mixins/responsive-visibility.less",
-        "contentFiles/Content/bootstrap/mixins/size.less",
-        "contentFiles/Content/bootstrap/mixins/tab-focus.less",
-        "contentFiles/Content/bootstrap/mixins/table-row.less",
-        "contentFiles/Content/bootstrap/mixins/text-emphasis.less",
-        "contentFiles/Content/bootstrap/mixins/text-overflow.less",
-        "contentFiles/Content/bootstrap/mixins/vendor-prefixes.less",
-        "contentFiles/Content/bootstrap/modals.less",
-        "contentFiles/Content/bootstrap/navbar.less",
-        "contentFiles/Content/bootstrap/navs.less",
-        "contentFiles/Content/bootstrap/normalize.less",
-        "contentFiles/Content/bootstrap/pager.less",
-        "contentFiles/Content/bootstrap/pagination.less",
-        "contentFiles/Content/bootstrap/panels.less",
-        "contentFiles/Content/bootstrap/popovers.less",
-        "contentFiles/Content/bootstrap/print.less",
-        "contentFiles/Content/bootstrap/progress-bars.less",
-        "contentFiles/Content/bootstrap/responsive-embed.less",
-        "contentFiles/Content/bootstrap/responsive-utilities.less",
-        "contentFiles/Content/bootstrap/scaffolding.less",
-        "contentFiles/Content/bootstrap/tables.less",
-        "contentFiles/Content/bootstrap/theme.less",
-        "contentFiles/Content/bootstrap/thumbnails.less",
-        "contentFiles/Content/bootstrap/tooltip.less",
-        "contentFiles/Content/bootstrap/type.less",
-        "contentFiles/Content/bootstrap/utilities.less",
-        "contentFiles/Content/bootstrap/variables.less",
-        "contentFiles/Content/bootstrap/wells.less",
-        "contentFiles/Content/fonts/glyphicons-halflings-regular.eot",
-        "contentFiles/Content/fonts/glyphicons-halflings-regular.svg",
-        "contentFiles/Content/fonts/glyphicons-halflings-regular.ttf",
-        "contentFiles/Content/fonts/glyphicons-halflings-regular.woff",
-        "contentFiles/Content/fonts/glyphicons-halflings-regular.woff2",
-        "contentFiles/Scripts/bootstrap.js",
-        "contentFiles/Scripts/bootstrap.min.js"
-      ]
-    },
-    "Bootstrap.v3.Datetimepicker/4.17.49": {
-      "sha512": "dBA3TmQCXJ7xZuxQo0IekWJog0dpuS5fgCo8Mjho4To06+pFzEOFn/qPxZ8IlxvVuwG3c3rBIXJ7dRgflsEtqg==",
-      "type": "package",
-      "path": "bootstrap.v3.datetimepicker/4.17.49",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "bootstrap.v3.datetimepicker.4.17.49.nupkg.sha512",
-        "bootstrap.v3.datetimepicker.nuspec",
-        "content/Content/_bootstrap-datetimepicker.less",
-        "content/Content/bootstrap-datetimepicker-build.less",
-        "content/Scripts/bootstrap-datetimepicker.js",
-        "content/Scripts/bootstrap-datetimepicker.min.js"
-      ]
-    },
-    "Bootstrap.v3.Datetimepicker.CSS/4.17.49": {
-      "sha512": "L9cJ+BibhmOw/O40CnuOGlWpgculIszHMR6Kov1GNV8IYijI04LRWl2moSW4ByzN6+toqj3LI+3FF8ff+0YXeQ==",
-      "type": "package",
-      "path": "bootstrap.v3.datetimepicker.css/4.17.49",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "bootstrap.v3.datetimepicker.css.4.17.49.nupkg.sha512",
-        "bootstrap.v3.datetimepicker.css.nuspec",
-        "content/Content/bootstrap-datetimepicker.css",
-        "content/Content/bootstrap-datetimepicker.min.css",
-        "content/Scripts/bootstrap-datetimepicker.js",
-        "content/Scripts/bootstrap-datetimepicker.min.js"
       ]
     },
     "Google.Protobuf/3.19.4": {
@@ -5171,19 +4622,6 @@
         "Tools/uninstall.ps1",
         "jquery.3.6.0.nupkg.sha512",
         "jquery.nuspec"
-      ]
-    },
-    "jQuery-datetimepicker/2.4.5": {
-      "sha512": "+ZwEXXASCpGHu6u1xPYyfXi0mSun/DIYKfM82JiFv3/9G0ZbW4LmxOuCpmuA8Cp0iWaIOHXDNFQBJmhvxDqi8Q==",
-      "type": "package",
-      "path": "jquery-datetimepicker/2.4.5",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "content/Content/jquery.datetimepicker.css",
-        "content/Scripts/jquery.datetimepicker.js",
-        "jquery-datetimepicker.2.4.5.nupkg.sha512",
-        "jquery-datetimepicker.nuspec"
       ]
     },
     "jQuery.Validation/1.19.5": {
@@ -6919,23 +6357,6 @@
         "runtimes/win/lib/netcoreapp3.1/Microsoft.Win32.SystemEvents.dll",
         "runtimes/win/lib/netcoreapp3.1/Microsoft.Win32.SystemEvents.xml",
         "useSharedDesignerContext.txt"
-      ]
-    },
-    "Moment.js/2.30.1": {
-      "sha512": "LIrDTazK51DhrqkMOy97PyS1jWsUHAhaIUYgB4aQTLLUxizMjk0QRltNb535Qgs5IzN/uv1SbFr/qv3PFnkTOA==",
-      "type": "package",
-      "path": "moment.js/2.30.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Content/Scripts/moment-with-locales.js",
-        "Content/Scripts/moment-with-locales.min.js",
-        "Content/Scripts/moment-with-locales.min.js.map",
-        "Content/Scripts/moment.js",
-        "Content/Scripts/moment.min.js",
-        "Content/Scripts/moment.min.js.map",
-        "moment.js.2.30.1.nupkg.sha512",
-        "moment.js.nuspec"
       ]
     },
     "MySql.Data/8.0.31": {
@@ -11404,19 +10825,14 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Bootstrap.Datepicker >= 1.8.0.1",
-      "Bootstrap.v3.Datetimepicker >= 4.17.49",
-      "Bootstrap.v3.Datetimepicker.CSS >= 4.17.49",
       "MetadataExtractor >= 2.7.2",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 6.0.28",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.16",
-      "Moment.js >= 2.30.1",
       "MySql.Data >= 8.0.31",
       "System.Data.SqlClient >= 4.8.4",
       "System.Drawing.Common >= 6.0.0",
       "WebMarkupMin.AspNetCore3 >= 2.12.0",
-      "bootstrap >= 5.2.1",
       "jQuery >= 3.6.0",
-      "jQuery-datetimepicker >= 2.4.5",
       "jQuery.Validation >= 1.19.5"
     ]
   },
@@ -11463,14 +10879,6 @@
             "target": "Package",
             "version": "[1.8.0.1, )"
           },
-          "Bootstrap.v3.Datetimepicker": {
-            "target": "Package",
-            "version": "[4.17.49, )"
-          },
-          "Bootstrap.v3.Datetimepicker.CSS": {
-            "target": "Package",
-            "version": "[4.17.49, )"
-          },
           "MetadataExtractor": {
             "target": "Package",
             "version": "[2.7.2, )"
@@ -11482,10 +10890,6 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[6.0.16, )"
-          },
-          "Moment.js": {
-            "target": "Package",
-            "version": "[2.30.1, )"
           },
           "MySql.Data": {
             "target": "Package",
@@ -11503,17 +10907,9 @@
             "target": "Package",
             "version": "[2.12.0, )"
           },
-          "bootstrap": {
-            "target": "Package",
-            "version": "[5.2.1, )"
-          },
           "jQuery": {
             "target": "Package",
             "version": "[3.6.0, )"
-          },
-          "jQuery-datetimepicker": {
-            "target": "Package",
-            "version": "[2.4.5, )"
           },
           "jQuery.Validation": {
             "target": "Package",

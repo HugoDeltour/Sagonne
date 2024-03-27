@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "XD76NQ63D5uKV8AEOFZjq+V8cznsRA5hE9oSLkAe50vFgHk/pNwXqiP/LcPvmyQwIxMoofAsiHfVM2Vu8i47Mg==",
+  "dgSpecHash": "GEH4uKTwZJXtcLZC1VcebApQVrZewMdxqYEMcbnXsfVylViRgILqvS0QkOww1RRlIWO7XvSxC7iZAY+j+7VKqA==",
   "success": true,
   "projectFilePath": "E:\\Github\\Sagonne\\Sagonne.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Hugo\\.nuget\\packages\\advancedstringbuilder\\0.1.0\\advancedstringbuilder.0.1.0.nupkg.sha512",
+    "C:\\Users\\Hugo\\.nuget\\packages\\advancedstringbuilder\\0.1.1\\advancedstringbuilder.0.1.1.nupkg.sha512",
     "C:\\Users\\Hugo\\.nuget\\packages\\bootstrap.datepicker\\1.8.0.1\\bootstrap.datepicker.1.8.0.1.nupkg.sha512",
     "C:\\Users\\Hugo\\.nuget\\packages\\google.protobuf\\3.19.4\\google.protobuf.3.19.4.nupkg.sha512",
     "C:\\Users\\Hugo\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
@@ -219,9 +219,9 @@
     "C:\\Users\\Hugo\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
     "C:\\Users\\Hugo\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Hugo\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\Hugo\\.nuget\\packages\\webmarkupmin.aspnet.common\\2.12.0\\webmarkupmin.aspnet.common.2.12.0.nupkg.sha512",
-    "C:\\Users\\Hugo\\.nuget\\packages\\webmarkupmin.aspnetcore3\\2.12.0\\webmarkupmin.aspnetcore3.2.12.0.nupkg.sha512",
-    "C:\\Users\\Hugo\\.nuget\\packages\\webmarkupmin.core\\2.12.0\\webmarkupmin.core.2.12.0.nupkg.sha512",
+    "C:\\Users\\Hugo\\.nuget\\packages\\webmarkupmin.aspnet.common\\2.16.0\\webmarkupmin.aspnet.common.2.16.0.nupkg.sha512",
+    "C:\\Users\\Hugo\\.nuget\\packages\\webmarkupmin.aspnetcore6\\2.16.0\\webmarkupmin.aspnetcore6.2.16.0.nupkg.sha512",
+    "C:\\Users\\Hugo\\.nuget\\packages\\webmarkupmin.core\\2.16.0\\webmarkupmin.core.2.16.0.nupkg.sha512",
     "C:\\Users\\Hugo\\.nuget\\packages\\xmpcore\\6.1.10.1\\xmpcore.6.1.10.1.nupkg.sha512"
   ],
   "logs": []

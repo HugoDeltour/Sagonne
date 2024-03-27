@@ -140,9 +140,10 @@ namespace Sagonne.Controllers
 
         [Authorize(Policy = "IsAdmin")]
         [HttpPost]
-        public async Task<IActionResult> FileUploadAsync(IFormFile[] Files, string DossierImport="", string NomPhotoTrombi="")
+        [IgnoreAntiforgeryToken]
+        public async Task<JsonResult> FileUpload(IFormFile[] Files, string DossierImport="", string NomPhotoTrombi="")
         {
-            AdministrationModel model = new AdministrationModel();
+            string PhraseFichier = "";
 
             if(Files != null && Files.Count() > 0)
             {
@@ -196,17 +197,17 @@ namespace Sagonne.Controllers
                         if (!System.IO.File.Exists(destFileName + _fileName))
                         {
                             System.IO.File.Move(path, destFileName + _fileName);
-                            model.PhraseFichier = $"Image {_fileName} ajouté";
+                            PhraseFichier = $"Image {_fileName} ajouté";
                         }
                         else
                         {
-                            model.PhraseFichier = $"Image {_fileName} déjà existant";
+                            PhraseFichier = $"Image {_fileName} déjà existant";
                         }
                     }
                 }
             }
 
-            return View(model);
+            return Json(new {PhraseFichier});
         }
         
         [Authorize(Policy = "IsAdmin")]

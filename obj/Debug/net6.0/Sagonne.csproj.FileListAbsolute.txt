@@ -50,7 +50,6 @@ E:\Github\Sagonne\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.S
 E:\Github\Sagonne\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 E:\Github\Sagonne\bin\Debug\net6.0\AdvancedStringBuilder.dll
 E:\Github\Sagonne\bin\Debug\net6.0\WebMarkupMin.AspNet.Common.dll
-E:\Github\Sagonne\bin\Debug\net6.0\WebMarkupMin.AspNetCore3.dll
 E:\Github\Sagonne\bin\Debug\net6.0\WebMarkupMin.Core.dll
 E:\Github\Sagonne\bin\Debug\net6.0\MetadataExtractor.dll
 E:\Github\Sagonne\bin\Debug\net6.0\XmpCore.dll
@@ -248,3 +247,4 @@ E:\Github\Sagonne\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Crypt
 E:\Github\Sagonne\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 E:\Github\Sagonne\bin\Debug\net6.0\package-lock.json
 E:\Github\Sagonne\bin\Debug\net6.0\package.json
+E:\Github\Sagonne\bin\Debug\net6.0\WebMarkupMin.AspNetCore6.dll

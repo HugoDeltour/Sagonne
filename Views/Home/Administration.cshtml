@@ -1,53 +1,82 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+	ViewData["Title"] = "Home Page";
 }
 @model AdministrationModel
 <div class="row">
-    @*Formulaire ajout photo*@
-    <div class="col-xs-6 offset-md-2">
-        <form method="post" id="Form-Fichier" asp-controller="Home" asp-action="FileUpload" enctype="multipart/form-data">
-            <div class="form-group">
-                <input type="file" id="Files" name="Files" multiple />
-                <select name="DossierImport" required>
-                    <option value="ANNEE" selected>Année de la photo</option>
-                    <option value="TROMBI">Trombinoscope</option>
-                    <option value="CARROUSEL">Carrousel</option>
-                </select>
-                <input type="submit" />
-            </div>            
-            @if (!string.IsNullOrEmpty(Model.PhraseFichier))
-            {
-                <div class="row">
-                    <div class="col-xs-6">
-                        @Model.PhraseFichier
-                    </div>
-                </div>
-            }
-        </form>
-    </div>
-    @*Formulaire ajout evenement*@
-    
-    <div class="col-xs-6 offset-md-1">
-        <form method="post" id="Form-Event" asp-controller="Home" asp-action="SetEvent" enctype="multipart/form-data">
-            <div class="form-group">
-                Nom de l'évenement : <input type="text" name="NomEvent"/>
-                Description de l'évenement : <input type="text" name="DescriptionEvent"/>
-                
-                <input id="DateEvent" type="text" >
+	<div class="col-xs-6 offset-md-2">
+		<form method="post" id="Form-Fichier" class="form-horizontal" data-toggle="validator" enctype="multipart/form-data">
+			<div class="form-group">
+				<input type="file" id="Files" name="Files" multiple />
+				<select id="DossierImport" name="DossierImport" required>
+					<option value="ANNEE" selected>Année de la photo</option>
+					<option value="TROMBI">Trombinoscope</option>
+					<option value="CARROUSEL">Carrousel</option>
+				</select>
+				<input type="submit" value="Enregistrer" />
+			</div>
+			<div class="row">
+				<div class="col-xs-6">
+					<span id="phraseFichier"></span>
+				</div>
+			</div>
+		</form>
+	</div>
 
-                <input type="submit" />
-            </div>
-            @if (!string.IsNullOrEmpty(Model.PhraseEvent))
-            {
-                <div class="row">
-                    <div class="col-xs-6">
-                        @Model.PhraseEvent
-                    </div>
-                </div>
-            }
-        </form>
-    </div>
+	<div class="col-xs-6 offset-md-1">
+		<form method="post" id="Form-Event" asp-controller="Home" asp-action="SetEvent" enctype="multipart/form-data">
+			
+			<div class="form-group">
+				Nom de l'évenement : <input type="text" name="NomEvent"/>
+				Description de l'évenement : <input type="text" name="DescriptionEvent"/>
+
+
+				<div class="input-group date col-md-4" id="datetimepicker1">
+					<input type='text' class="form-control" />
+					<span class="input-group-addon">
+						<span class="fa-regular fa-calendar fa-2xl" style="padding-top: 17px;"></span>
+					</span>
+				</div>
+
+				<input type="submit" />
+			</div>
+			<div class="row">
+				<div class="col-xs-6">
+					<span id="phraseEvent"></span>
+				</div>
+			</div>
+		</form>
+	</div>
 </div>
+
 @section Scripts{
-    
+	<script>
+		$(document).ready(function () {			
+			$('#datetimepicker1').datetimepicker();
+
+			$("#Form-Fichier").on("submit",function(e){
+				e.preventDefault();
+
+				var $this = $(this);
+				var input = document.getElementById("Files");
+				var importLoc = document.getElementById("DossierImport");
+
+				$.ajax({
+					url: "/Home/FileUpload",
+					method: "post",
+					dataType: "json",
+					data: {
+						Files : input.files,
+						DossierImport: importLoc
+					},
+					success: function (data) {
+						console.log(data);
+						$("#phraseFichier").html(''+data.PhraseFichier);
+					},
+					error: function (data) {
+
+					}
+				});
+			});
+		});
+	</script>
 }

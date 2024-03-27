@@ -2,8 +2,15 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
 using Sagonne.AuthorizationRequirements;
+using WebMarkupMin.AspNetCore6;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddWebMarkupMin()
+    .AddHtmlMinification()
+    .AddXmlMinification()
+    .AddHttpCompression()
+    ;
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -16,6 +23,7 @@ builder.Services.
     {
         options.AddPolicy("IsAdmin", policy => policy.Requirements.Add(new AdminUserRequirement()));
     });
+
 
 
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)

@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net6.0": {
-      "AdvancedStringBuilder/0.1.0": {
+      "AdvancedStringBuilder/0.1.1": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/AdvancedStringBuilder.dll": {
@@ -3638,10 +3638,10 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "WebMarkupMin.AspNet.Common/2.12.0": {
+      "WebMarkupMin.AspNet.Common/2.16.0": {
         "type": "package",
         "dependencies": {
-          "WebMarkupMin.Core": "2.12.0"
+          "WebMarkupMin.Core": "2.16.0"
         },
         "compile": {
           "lib/netstandard2.1/WebMarkupMin.AspNet.Common.dll": {
@@ -3654,19 +3654,18 @@
           }
         }
       },
-      "WebMarkupMin.AspNetCore3/2.12.0": {
+      "WebMarkupMin.AspNetCore6/2.16.0": {
         "type": "package",
         "dependencies": {
-          "AdvancedStringBuilder": "0.1.0",
-          "WebMarkupMin.AspNet.Common": "2.12.0"
+          "WebMarkupMin.AspNet.Common": "2.16.0"
         },
         "compile": {
-          "lib/netcoreapp3.1/WebMarkupMin.AspNetCore3.dll": {
+          "lib/net6.0/WebMarkupMin.AspNetCore6.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netcoreapp3.1/WebMarkupMin.AspNetCore3.dll": {
+          "lib/net6.0/WebMarkupMin.AspNetCore6.dll": {
             "related": ".xml"
           }
         },
@@ -3674,10 +3673,10 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "WebMarkupMin.Core/2.12.0": {
+      "WebMarkupMin.Core/2.16.0": {
         "type": "package",
         "dependencies": {
-          "AdvancedStringBuilder": "0.1.0"
+          "AdvancedStringBuilder": "0.1.1"
         },
         "compile": {
           "lib/netstandard2.1/WebMarkupMin.Core.dll": {
@@ -3706,15 +3705,17 @@
     }
   },
   "libraries": {
-    "AdvancedStringBuilder/0.1.0": {
-      "sha512": "IbN3r5whlJvi8MhCDPVpIb+NVScyUcKSdcJZrnoXFDyzPDISl3AbWouNBYIHRdZdfGuzqCQEhM1vkxbIKqQVaQ==",
+    "AdvancedStringBuilder/0.1.1": {
+      "sha512": "32IrlspOA59ewotQ4tlKP27QhKxMKGB7oncqlwVHn/hAz+j/r3HvLr6/W9ni9Mnyktlcg6kt7QZS8rEgur1+4Q==",
       "type": "package",
-      "path": "advancedstringbuilder/0.1.0",
+      "path": "advancedstringbuilder/0.1.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "advancedstringbuilder.0.1.0.nupkg.sha512",
+        "LICENSE.txt",
+        "advancedstringbuilder.0.1.1.nupkg.sha512",
         "advancedstringbuilder.nuspec",
+        "icon.png",
         "lib/net40-client/AdvancedStringBuilder.dll",
         "lib/net40-client/AdvancedStringBuilder.xml",
         "lib/net45/AdvancedStringBuilder.dll",
@@ -3722,7 +3723,8 @@
         "lib/netstandard1.0/AdvancedStringBuilder.dll",
         "lib/netstandard1.0/AdvancedStringBuilder.xml",
         "lib/netstandard2.0/AdvancedStringBuilder.dll",
-        "lib/netstandard2.0/AdvancedStringBuilder.xml"
+        "lib/netstandard2.0/AdvancedStringBuilder.xml",
+        "readme.txt"
       ]
     },
     "Bootstrap.Datepicker/1.8.0.1": {
@@ -10740,10 +10742,10 @@
         "system.xml.xdocument.nuspec"
       ]
     },
-    "WebMarkupMin.AspNet.Common/2.12.0": {
-      "sha512": "Q00R7Fjkpl7JqlFwBA4gZpGMAIB/lVp/fJuPx3RCy3PzIOHalpCO3ZdaK54y0bByiOCIMfoMWK4xKeesh7kBww==",
+    "WebMarkupMin.AspNet.Common/2.16.0": {
+      "sha512": "9jNoL5isfNdxGqmAtW0jPlA7vjU+k9ypl/3SWviK8YPJKxDsU5LH5HXLsP/2W3lcq9eN1axy2XHzUolAV7EX9A==",
       "type": "package",
-      "path": "webmarkupmin.aspnet.common/2.12.0",
+      "path": "webmarkupmin.aspnet.common/2.16.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -10760,30 +10762,30 @@
         "lib/netstandard2.1/WebMarkupMin.AspNet.Common.dll",
         "lib/netstandard2.1/WebMarkupMin.AspNet.Common.xml",
         "readme.txt",
-        "webmarkupmin.aspnet.common.2.12.0.nupkg.sha512",
+        "webmarkupmin.aspnet.common.2.16.0.nupkg.sha512",
         "webmarkupmin.aspnet.common.nuspec"
       ]
     },
-    "WebMarkupMin.AspNetCore3/2.12.0": {
-      "sha512": "kSMkG0Y1kyg9wJPbzKdqjP56OjjtDfASteUEMjrtvfgoMnKBPmJArGic+HktCAJDdZrhxawRqK39JBAcUT/8IQ==",
+    "WebMarkupMin.AspNetCore6/2.16.0": {
+      "sha512": "bszqE9SVWzmWIpRfbmvVI0WH+cmWKHJw6rztqHw9K+jrjEkbSK5fEOfZq25jvJVWSRYc0JjLv4FerzSTB0y3SQ==",
       "type": "package",
-      "path": "webmarkupmin.aspnetcore3/2.12.0",
+      "path": "webmarkupmin.aspnetcore6/2.16.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.txt",
         "icon.png",
-        "lib/netcoreapp3.1/WebMarkupMin.AspNetCore3.dll",
-        "lib/netcoreapp3.1/WebMarkupMin.AspNetCore3.xml",
+        "lib/net6.0/WebMarkupMin.AspNetCore6.dll",
+        "lib/net6.0/WebMarkupMin.AspNetCore6.xml",
         "readme.txt",
-        "webmarkupmin.aspnetcore3.2.12.0.nupkg.sha512",
-        "webmarkupmin.aspnetcore3.nuspec"
+        "webmarkupmin.aspnetcore6.2.16.0.nupkg.sha512",
+        "webmarkupmin.aspnetcore6.nuspec"
       ]
     },
-    "WebMarkupMin.Core/2.12.0": {
-      "sha512": "NUZGFpRtLwLgUsMer9nTrKGcgtbcCB7KRPiNpZBDwbaWfSVOKDQYygpZ0587hP9zHQ9jzCMpJenO6H2SUhUZXg==",
+    "WebMarkupMin.Core/2.16.0": {
+      "sha512": "0ndPjU+SxszmnynCpx7pK2iyz2o4VB9cdVdejh4KlXaxvcFFspBM443iXSFkt36W4nkgSc4idDm7pctXEpOQ3A==",
       "type": "package",
-      "path": "webmarkupmin.core/2.12.0",
+      "path": "webmarkupmin.core/2.16.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -10800,7 +10802,7 @@
         "lib/netstandard2.1/WebMarkupMin.Core.dll",
         "lib/netstandard2.1/WebMarkupMin.Core.xml",
         "readme.txt",
-        "webmarkupmin.core.2.12.0.nupkg.sha512",
+        "webmarkupmin.core.2.16.0.nupkg.sha512",
         "webmarkupmin.core.nuspec"
       ]
     },
@@ -10831,7 +10833,7 @@
       "MySql.Data >= 8.0.31",
       "System.Data.SqlClient >= 4.8.4",
       "System.Drawing.Common >= 6.0.0",
-      "WebMarkupMin.AspNetCore3 >= 2.12.0",
+      "WebMarkupMin.AspNetCore6 >= 2.16.0",
       "jQuery >= 3.6.0",
       "jQuery.Validation >= 1.19.5"
     ]
@@ -10903,9 +10905,9 @@
             "target": "Package",
             "version": "[6.0.0, )"
           },
-          "WebMarkupMin.AspNetCore3": {
+          "WebMarkupMin.AspNetCore6": {
             "target": "Package",
-            "version": "[2.12.0, )"
+            "version": "[2.16.0, )"
           },
           "jQuery": {
             "target": "Package",

@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Trombinoscope";
+}
+@model TrombinoscopeModel
+<div class="row">
+    @foreach(KeyValuePair<string,string> Personne in Model.Personnes)
+    {
+        <a href="PhotoAnnee?Annee=@Personne.Key"><br />
+            <img class="imgPortofolio" src="@Personne.Value" />
+            <div class="text-center">
+                @Personne.Key
+            </div>
+        </a>
+    }
+</div>

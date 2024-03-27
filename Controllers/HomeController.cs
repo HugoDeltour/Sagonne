@@ -247,6 +247,31 @@ namespace Sagonne.Controllers
             return View(model);
         }
 
+        public async Task<ActionResult> Trombinoscope()
+        {
+			TrombinoscopeModel model = new TrombinoscopeModel()
+            {
+                Personnes = new Dictionary<string, string>()
+            };
+
+            string[] dossiers = System.IO.Directory.GetDirectories(Path.Combine(System.IO.Directory.GetCurrentDirectory(), "wwwroot/images/Trombinoscope/"));
+
+            foreach (string dossier in dossiers)
+            {
+                string[] NomDossier = dossier.Split("\\");
+                string dossierPers = NomDossier[NomDossier.Length - 1];
+                List<string> images = System.IO.Directory.GetFiles(dossierPers).ToList();
+                if(images.Count() > 0)
+                {
+                    images.Shuffle();
+                    model.Personnes.Add(dossierPers.Replace("wwwroot/images/Trombinoscope/",""), images.First().Replace("wwwroot", ""));
+                    
+                }
+            }
+
+            return View(model);
+        }
+
         public async Task<ActionResult> PhotoAnnee(int annee=0)
         {
             PhotoAnneeModel model = new PhotoAnneeModel()

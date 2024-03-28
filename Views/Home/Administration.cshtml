@@ -12,6 +12,9 @@
 					<option value="TROMBI">Trombinoscope</option>
 					<option value="CARROUSEL">Carrousel</option>
 				</select>
+				<div id="DivNomTrombinoscope">
+					Nom de la personne : <input type="text" id="NomTrombinoscope" />
+				</div>
 				<input type="submit" value="Enregistrer" />
 			</div>
 			<div class="row">
@@ -56,12 +59,21 @@
 		$(document).ready(function () {			
 			$('#datetimepicker1').datetimepicker();
 
+			$("#DivNomTrombinoscope").hide();
+			$("#DossierImport").on("change",function(e){
+				$("#DivNomTrombinoscope").hide();
+				if($("#DossierImport").val() == "TROMBI"){
+					$("#DivNomTrombinoscope").show();
+				}
+			});
+
 			$("#Form-Fichier").on("submit",function(e){
 				e.preventDefault();
 
 				var $this = $(this);
 				var input = document.getElementById("Files");
 				var importLoc = document.getElementById("DossierImport");
+				var nomTrombi = document.getElementById("NomTrombinoscope");
 
 				$.ajax({
 					url: "/Home/FileUpload",
@@ -69,7 +81,8 @@
 					dataType: "json",
 					data: {
 						Files : input.files,
-						DossierImport: importLoc
+						DossierImport: importLoc,
+						NomPhotoTrombi : nomTrombi
 					},
 					success: function (data) {
 						console.log(data);

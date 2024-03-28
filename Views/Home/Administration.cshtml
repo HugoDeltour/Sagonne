@@ -26,16 +26,19 @@
 		<form method="post" id="Form-Event" asp-controller="Home" asp-action="SetEvent" enctype="multipart/form-data">
 			
 			<div class="form-group">
-				Nom de l'évenement : <input type="text" name="NomEvent"/>
-				Description de l'évenement : <input type="text" name="DescriptionEvent"/>
+				<div class="col-xs-12">
+					Nom de l'évenement : <input type="text" name="NomEvent" />
+				</div><br />
+				<div class="col-xs-12">
+					Description de l'évenement : <input type="text" name="DescriptionEvent" />
+				</div><br />
 
-
-				<div class="input-group date col-md-4" id="datetimepicker1">
+				<div class="input-group date" id="datetimepicker1">
 					<input type='text' class="form-control" />
 					<span class="input-group-addon">
 						<span class="fa-regular fa-calendar fa-2xl" style="padding-top: 17px;"></span>
 					</span>
-				</div>
+				</div><br />
 
 				<input type="submit" />
 			</div>

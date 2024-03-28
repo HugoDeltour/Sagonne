@@ -2,6 +2,11 @@
     ViewData["Title"] = "Home Page";
 }
 @model PhotoAnneeModel
+
+
+@*Basculer sur des card de bootstrap*@
+
+
 <div class="row">
     @foreach (KeyValuePair<string, string> Annee in Model.Photos)
     {
@@ -9,5 +14,20 @@
             <br />
             <img class="imgPortofolio" src="@Annee.Value" />
         </a>
+    }
+</div>
+
+<div class="div-matrix-4">
+    @foreach (KeyValuePair<string, string> Photo in Model.Photos)
+    {
+        <div class="card">
+            @if (!Photo.Key.StartsWith("filler_"))
+            {
+                <img class="imgPortofolio" src="@Photo.Value" />
+                <div class="card-body">
+                    <h5 class="card-title">@Photo.Key</h5>
+                </div>
+            }
+        </div>
     }
 </div>

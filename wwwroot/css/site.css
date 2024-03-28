@@ -34,3 +34,248 @@ img{
     height : 200px;
     padding : 10px;
 }
+
+
+/*#region Matrice de 4 div */
+
+.div-matrix-4 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: 5px;
+}
+
+    .div-matrix-4 > div {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 25%;
+        float: left;
+    }
+
+        .div-matrix-4 > div > * {
+            height: 100%;
+        }
+
+        .div-matrix-4 > div:nth-child(4n+5) {
+            clear: left;
+            margin-left: 0;
+        }
+
+/*#endregion */
+
+/*#region Matrice de 3 div */
+
+.div-matrix-3 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: 5px;
+}
+
+    .div-matrix-3 > div {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 33%;
+        float: left;
+    }
+
+        .div-matrix-3 > div > * {
+            height: 100%;
+        }
+
+        .div-matrix-3 > div:nth-child(3n+4) {
+            clear: left;
+            margin-left: 0;
+        }
+
+/*#endregion */
+
+/*#region Matrice de 2 div */
+
+.div-matrix-2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: 5px;
+}
+
+    .div-matrix-2 > div {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 50%;
+        float: left;
+    }
+
+        .div-matrix-2 > div > * {
+            height: 100%;
+        }
+
+        .div-matrix-2 > div:nth-child(2n+3) {
+            clear: left;
+            margin-left: 0;
+        }
+
+/*#endregion */
+
+/*#region Matrice de 3 boutons */
+
+.btn-matrix-3 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: 5px;
+}
+
+    .btn-matrix-3 > .btn-group {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+        .btn-matrix-3 > .btn-group > .btn {
+            height: 100%;
+        }
+
+        .btn-matrix-3 > .btn-group:nth-child(3n+4) {
+            clear: left;
+            margin-left: 0;
+        }
+
+        .btn-matrix-3 > .btn-group:nth-child(n+4) > .btn {
+            margin-top: -1px;
+        }
+
+        .btn-matrix-3 > .btn-group:first-child > .btn {
+            border-bottom-left-radius: 0;
+        }
+
+        .btn-matrix-3 > .btn-group:nth-child(3) > .btn {
+            border-top-right-radius: 4px !important;
+        }
+
+        .btn-matrix-3 > .btn-group:nth-last-child(3) > .btn {
+            border-bottom-left-radius: 4px !important;
+        }
+
+        .btn-matrix-3 > .btn-group:last-child > .btn {
+            border-top-right-radius: 0;
+        }
+
+.btn-group-justified.btn-matrix-3 > .btn-group {
+    width: 33%;
+    float: left;
+}
+
+    .btn-group-justified.btn-matrix-3 > .btn-group > .btn {
+        white-space: normal;
+    }
+
+/*#endregion */
+
+/*#region Matrice de 2 boutons */
+
+.btn-matrix-2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: 5px;
+}
+
+    .btn-matrix-2 > .btn-group {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+        .btn-matrix-2 > .btn-group > .btn {
+            height: 100%;
+        }
+
+        .btn-matrix-2 > .btn-group:nth-child(2n+3) {
+            clear: left;
+            margin-left: 0;
+        }
+
+        .btn-matrix-2 > .btn-group:nth-child(n+3) > .btn {
+            margin-top: -1px;
+        }
+
+        .btn-matrix-2 > .btn-group:first-child > .btn {
+            border-bottom-left-radius: 0;
+        }
+
+        .btn-matrix-2 > .btn-group:nth-child(2) > .btn {
+            border-top-right-radius: 4px !important;
+        }
+
+        .btn-matrix-2 > .btn-group:nth-last-child(2) > .btn {
+            border-bottom-left-radius: 4px !important;
+        }
+
+        .btn-matrix-2 > .btn-group:last-child > .btn {
+            border-top-right-radius: 0;
+        }
+
+.btn-group-justified.btn-matrix-2 > .btn-group {
+    width: 50%;
+    float: left;
+}
+
+    .btn-group-justified.btn-matrix-2 > .btn-group > .btn {
+        white-space: normal;
+    }
+
+/*#endregion */

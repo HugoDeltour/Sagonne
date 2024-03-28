@@ -2,14 +2,19 @@
     ViewData["Title"] = "Trombinoscope";
 }
 @model TrombinoscopeModel
+
+
+@*Basculer sur des card de bootstrap*@
+
+
 <div class="row">
     @foreach(KeyValuePair<string,string> Personne in Model.Personnes)
     {
-        <a href="PhotoAnnee?Annee=@Personne.Key"><br />
+        <div class="card">
             <img class="imgPortofolio" src="@Personne.Value" />
-            <div class="text-center">
-                @Personne.Key
+            <div class="card-body">
+                <h5 class="card-title">@Personne.Key</h5>
             </div>
-        </a>
+        </div>
     }
 </div>

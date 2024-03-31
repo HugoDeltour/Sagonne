@@ -3,61 +3,110 @@
 }
 @model AdministrationModel
 <div class="row">
-	<div class="col-xs-6 offset-md-2">
-		<form method="post" id="Form-Fichier" class="form-horizontal" data-toggle="validator" enctype="multipart/form-data">
-			<div class="form-group">
-				<input type="file" id="Files" name="Files" multiple />
-				<select id="DossierImport" name="DossierImport" required>
-					<option value="ANNEE" selected>Année de la photo</option>
-					<option value="TROMBI">Trombinoscope</option>
-					<option value="CARROUSEL">Carrousel</option>
-				</select>
-				<div id="DivNomTrombinoscope">
-					Nom de la personne : <input type="text" id="NomTrombinoscope" />
-				</div>
-				<input type="submit" value="Enregistrer" />
+	<div class="col-md-3 offset-md-2">
+		<div class="card">
+			<div class="card-header">
+				Import de photo
 			</div>
-			<div class="row">
-				<div class="col-xs-6">
-					<span id="phraseFichier"></span>
-				</div>
+			<div class="card-body">				
+				<form method="post" id="Form-Fichier" class="form-horizontal" data-toggle="validator" enctype="multipart/form-data">
+					<div class="form-group">
+						<input type="file" id="Files" name="Files" multiple /><br />
+						<select id="DossierImport" name="DossierImport" required>
+							<option value="ANNEE" selected>Année de la photo</option>
+							<option value="TROMBI">Trombinoscope</option>
+							<option value="CARROUSEL">Carrousel</option>
+						</select><br />
+						<div id="DivNomTrombinoscope">
+							Nom de la personne : <input type="text" id="NomTrombinoscope" />
+						</div>
+						<input type="submit" value="Enregistrer" />
+					</div>
+					<div class="row">
+						<div class="col-xs-6">
+							<span id="phraseFichier"></span>
+						</div>
+					</div>
+				</form>
 			</div>
-		</form>
+		</div>
 	</div>
 
-	<div class="col-xs-6 offset-md-1">
-		<form method="post" id="Form-Event" asp-controller="Home" asp-action="SetEvent" enctype="multipart/form-data">
-			
-			<div class="form-group">
-				<div class="col-xs-12">
-					Nom de l'évenement : <input type="text" name="NomEvent" />
-				</div><br />
-				<div class="col-xs-12">
-					Description de l'évenement : <input type="text" name="DescriptionEvent" />
-				</div><br />
-
-				<div class="input-group date" id="datetimepicker1">
-					<input type='text' class="form-control" />
-					<span class="input-group-addon">
-						<span class="fa-regular fa-calendar fa-2xl" style="padding-top: 17px;"></span>
-					</span>
-				</div><br />
-
-				<input type="submit" />
+	<div class="col-md-3 offset-md-1">
+		<div class="card">
+			<div class="card-header">
+				Création d'évènement
 			</div>
-			<div class="row">
-				<div class="col-xs-6">
-					<span id="phraseEvent"></span>
-				</div>
+			<div class="card-body">
+				<form method="post" id="Form-Event" asp-controller="Home" asp-action="SetEvent" enctype="multipart/form-data">
+					<div class="form-group">
+						<div class="col-xs-12">
+							Nom de l'évenement : <input type="text" name="NomEvent" />
+						</div><br />
+						<div class="col-xs-12">
+							Description de l'évenement : <input type="text" name="DescriptionEvent" />
+						</div><br />
+
+						<div class="input-group date" id="datetimepicker1">
+							<label for="Date_Deb" style="padding-top: 6px;">Date début : </label>
+							<input type='text' class="form-control" id="Date_Deb" name="Date_Deb" placeholder="Date début" style="margin-left:10px; margin-right: 10px;" readonly/>
+							<span class="input-group-addon">
+								<span class="fa-regular fa-calendar fa-2xl" style="padding-top: 17px;"></span>
+							</span>
+						</div><br />
+						<div class="input-group date" id="datetimepicker2">
+							<label for="Date_Fin" style="padding-top: 6px;">Date fin : </label>
+							<input type='text' class="form-control" name="Date_Fin" id="Date_Fin" placeholder="Date fin" style="margin-left:10px; margin-right: 10px;" readonly/>
+							<span class="input-group-addon">
+								<span class="fa-regular fa-calendar fa-2xl" style="padding-top: 17px;"></span>
+							</span>
+						</div><br />
+
+						<input type="submit" />
+					</div>
+					<div class="row">
+						<div class="col-xs-6">
+							<span id="phraseEvent"></span>
+						</div>
+					</div>
+				</form>
 			</div>
-		</form>
+		</div>
 	</div>
 </div>
 
 @section Scripts{
 	<script>
-		$(document).ready(function () {			
-			$('#datetimepicker1').datetimepicker();
+		var datepickerOptions = {
+			locale: 'fr',
+			format: 'DD/MM/YYYY hh:mm:ss',
+			useCurrent: false,
+			ignoreReadonly: true,
+			widgetPositioning: { vertical: 'bottom' },
+			showTodayButton: true,
+			toolbarPlacement: 'top',
+			defaultDate: moment(),
+			minDate: moment(),
+			tooltips: {
+				today: 'Sélectionner aujourd\'hui',
+				selectMonth: 'Affichage mois',
+				prevMonth: 'Mois précédent',
+				nextMonth: 'Mois suivant',
+				selectYear: 'Affichage année',
+				prevYear: 'Année précédente',
+				nextYear: 'Année suivante',
+				selectDecade: 'Affichage décennie',
+				prevDecade: 'Décennie précédente',
+				nextDecade: 'Décénnie suivante',
+				prevCentury: 'Siècle précédent',
+				nextCentury: 'Siècle suivant'
+			}
+		};
+		$(document).ready(function () {
+
+			moment.locale('fr'); 
+			$('#datetimepicker1').datetimepicker(datepickerOptions);
+			$('#datetimepicker2').datetimepicker();
 
 			$("#DivNomTrombinoscope").hide();
 			$("#DossierImport").on("change",function(e){

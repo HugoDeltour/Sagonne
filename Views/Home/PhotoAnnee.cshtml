@@ -7,27 +7,81 @@
 @*Basculer sur des card de bootstrap*@
 
 
-<div class="row">
+<div class="row justify-content-around offset-md-1">
+
     @foreach (KeyValuePair<string, string> Annee in Model.Photos)
     {
-        <a href="Photo?Photo=@Annee.Value">
+        <div class="Photo" data-photo="@Annee.Value">
             <br />
             <img class="imgPortofolio" src="@Annee.Value" />
-        </a>
-    }
-</div>
-
-<div class="div-matrix-4">
-    @foreach (KeyValuePair<string, string> Photo in Model.Photos)
-    {
-        <div class="card">
-            @if (!Photo.Key.StartsWith("filler_"))
-            {
-                <img class="imgPortofolio" src="@Photo.Value" />
-                <div class="card-body">
-                    <h5 class="card-title">@Photo.Key</h5>
-                </div>
-            }
         </div>
     }
 </div>
+
+
+<div class="modal fade" id="modalImage" tabindex="-1" role="dialog" aria-labelledby="modalImageLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header" >
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script>
+
+        $(document).ready(function () {
+
+            $(".Photo").on("click", function (e) {
+
+                e.preventDefault();
+
+                var $modal = $("#modalImage"),
+                    $modalContent = $modal.find(".modal-body");
+                $.ajax({
+                    url: "_Photo",
+                    method: "post",
+                    data: {
+                        photo: $(this).data("photo")
+                    },
+                    success: function (datas) {
+                        $modalContent.html(datas);
+                    },
+                    error: function (datas) {
+                        var $btnFermer = $("<button />")
+                            .addClass("btn btn-danger")
+                            .attr("data-dismiss", "modal")
+                            .text("Fermer");
+
+                        var $errorNode = $("<div />")
+                            .css({ margin: "30px" })
+                            .addClass("text-center text-danger")
+                            .html(["<hr />", $btnFermer]);
+
+                        if (datas.responseText != "" && typeof (datas.responseText) != "undefined")
+                            $modalContent.html([datas.responseText, $("<div />").css({ margin: "30px" }).addClass("text-center").html($btnFermer)]);
+                        else
+                            $modalContent.html($errorNode.prepend($("<b />").html(datas.status + " " + datas.statusText)));
+                    }
+                });
+
+                // Affichage de la boîte de dialogue
+                $("#modalImage").modal({
+                    show: true
+                });
+
+            });
+
+
+        });
+    </script>
+}

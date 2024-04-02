@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\images\2012\" />
+    <Folder Include="wwwroot\images\2022\" />
   </ItemGroup>
 
 </Project>

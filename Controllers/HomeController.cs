@@ -289,16 +289,18 @@ namespace Sagonne.Controllers
 				i++;
 			}
 
-			int fillerCount = 1;
-
-			// Ajout d'application jusqu'à ce que ce soit un multiple de 3 afin d'harmoniser l'affichage
-			while (Math.Abs(((double)model.Photos.Count / 3) % 1) > (double.Epsilon * 100))
-			{
-				model.Photos.Add("filler_" + fillerCount, string.Empty);
-				fillerCount++;
-			}
-
 			return View(model);
+		}
+
+		public ActionResult _Photo(string photo)
+		{
+
+			PhotoModel model = new PhotoModel()
+			{
+				Photo = photo
+			};
+
+			return PartialView(model);
 		}
 
 		[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
